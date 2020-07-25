@@ -1,5 +1,5 @@
 <template>
-  <div class="PrevNext flex justify-between px-6 sm:px-10 lg:px-20 xl:px-32">
+  <div class="PrevNext flex justify-between px-6 sm:px-0">
     <div>
       <nuxt-link v-if="surround[0]" :to="surround[0].path" class="PrevNext-prev">
         <div class="flex max-w-xs px-2 md:px-4 py-2 md:py-4 rounded-md hover:shadow text-light-purple hover:bg-yellow hover:text-white border-2 border-yellow transition ease-out duration-700">
