@@ -69,13 +69,6 @@ export default {
       })
     }
   },
-  render: {
-    // working:
-    injectScripts: process.env.NODE_ENV === 'development'
-
-    // HMR not working:
-    // injectScripts: false,
-  },
   /*
   ** Content module configuration
   ** See https://content.nuxtjs.org/configuration
