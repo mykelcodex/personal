@@ -12,7 +12,7 @@
           <div class="flex-1 flex flex-col justify-between">
             <div class="text-white mt-2 p-3">
               <nuxt-link :to="post.path"><h2 class="text-xl xl:text-2xl font-bold">{{ post.title }}</h2></nuxt-link>
-              <nuxt-link :to="post.path"><div class="mt-2 font-light text-light-purple" v-text="post.description.substring(0, 150) + '...'"></div></nuxt-link>
+              <nuxt-link :to="post.path"><div class="mt-2 font-light text-light-purple">{{ post.description.substring(0, 150) }}</div></nuxt-link>
             </div>
             <div class="inline-flex items-center border-t border-yellow py-2">
               <p class="px-3 text-light-purple text-sm">{{ post.createdAt | toDate }}</p>
