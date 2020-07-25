@@ -16,7 +16,7 @@
     </div>
     <div>
       <nuxt-link v-if="surround[1]" :to="surround[1].path" class="PrevNext-next">
-        <div class="flex max-w-xs px-4 py-4 rounded-md hover:shadow text-light-purple hover:bg-yellow hover:text-white border-2 border-yellow transition ease-out duration-700">
+        <div class="flex max-w-xs px-2 md:px-4 py-2 md:py-4 rounded-md hover:shadow text-light-purple hover:bg-yellow hover:text-white border-2 border-yellow transition ease-out duration-700">
           <div class="mr-3 hidden md:block">
             <p>{{ surround[1].title.substring(0, 30) }}</p>
           </div>
