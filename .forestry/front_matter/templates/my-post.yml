@@ -12,5 +12,3 @@ fields:
   config:
     required: false
   label: Description
-pages:
-- content/blog/another-test.md

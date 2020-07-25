@@ -8,5 +8,3 @@ fields:
     required: false
   label: Title
   description: Just testing
-pages:
-- content/blog/i-am-just-testing-this-plaform.md
