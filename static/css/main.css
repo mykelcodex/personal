@@ -1,0 +1,128 @@
+.page-enter-active, .page-leave-active {
+    transition: opacity 1s, transform 0.5s;
+  }
+  .page-enter, .page-leave-to {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  .text-light-purple {
+    color: #ababc6;
+  }
+  .background-size{
+    background-size: 2000px auto;
+  }
+  .link{
+    @apply text-yellow;
+  }
+  .max-w-screen-xl {
+    max-width: 1350px!important;
+  }
+  .markdown a{
+    @apply underline;
+    @apply text-yellow;
+  }
+  .markdown h1{
+    @apply text-4xl;
+    color: #e2e8f0;
+    @apply py-4;
+  }
+  .markdown h2{
+    @apply text-3xl;
+    color: #e2e8f0;
+    @apply py-4;
+  }
+  .markdown h3{
+    @apply text-2xl;
+    color: #e2e8f0;
+    @apply py-4;
+  }
+  .markdown h4{
+    @apply text-xl;
+    color: #e2e8f0;
+    @apply py-4;
+  }
+  .markdown h5{
+    @apply text-lg;
+    color: #e2e8f0;
+    @apply py-4;
+  }
+  .markdown ul, ol{
+    list-style: none;
+    color: #e2e8f0;
+    margin-left:20px;
+  }
+  .markdown {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .markdown td {
+    border: 1px solid #313146;
+    padding: 8px;
+    color: #e2e8f0;
+  }
+  .markdown hr{
+    @apply text-purple-dark;
+  }
+  
+  .markdown tr:nth-child(even){background-color: #313146;}
+  
+  
+  .markdown th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    @apply px-6;
+    text-align: left;
+    background-color: #313146;
+    color: #e2e8f0;
+  }
+  .markdown ul li::before{
+    content: "\2022";
+    @apply text-yellow;
+    @apply text-xl;
+    list-style-position: inside;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+  .markdown blockquote{
+    background: #313146;
+    border-left: 10px solid #ccc;
+    margin: 1em 7px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+  .markdown code{
+    @apply px-2;
+    @apply rounded;
+    color: #e2e8f0;
+    @apply shadow;
+  }
+  .markdown p code{
+    @apply bg-purple-dark;
+  }
+  .markdown pre{
+    @apply py-5;
+  }
+  .markdown pre code{
+    @apply p-4;
+    @apply text-sm;
+  }
+  .markdown blockquote:before{
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  .markdown blockquote p{
+    display: inline;
+  }
+  .markdown p{
+    color: #e2e8f0;
+    @apply text-lg;
+    @apply py-4;
+    @apply leading-relaxed;
+  }
