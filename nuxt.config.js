@@ -61,6 +61,7 @@ export default {
     '@nuxtjs/sitemap',
   ],
   sitemap: {
+    hostname: 'https://mykeel.dev',
     filter ({ routes }) {
       return routes.map(route => {
         route.url = `${route.url}/`
