@@ -12,8 +12,6 @@ sections:
 - type: document
   path: content/index.md
   label: Home
-  match: "**/*"
-  read_only: false
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
