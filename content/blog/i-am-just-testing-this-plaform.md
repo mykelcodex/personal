@@ -8,7 +8,6 @@ description: 'Empower your NuxtJS application with @nuxt/content module: write i
 Create API is easy in Laravel
 
 ```php{1,3-5}[server.php]
-{1,3-5}[server.php]
 class Purchased extends Mailable
 {
     use Queueable, SerializesModels;
