@@ -46,7 +46,7 @@ export default {
   },
   head(){
       return{
-        title: 'Oke Michael | Software Engineer',
+        title: 'Oke Michael - Software Engineer',
         meta: [
           { hid: 'description', name: 'description', content: 'Blog posts' },
           { name: 'keywords', content: ['PHP','Javascript','VueJS','Laravel','ReactJS','Lodash','NuxtJS','WebSocket','InertiaJS'] },

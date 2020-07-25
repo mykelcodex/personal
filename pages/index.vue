@@ -217,7 +217,7 @@
 export default {
 head () {
     return {
-      title: 'Oke Michael | Software Engineer',
+      title: 'Oke Michael - Software Engineer',
       meta: [
         { hid: 'description', name: 'description', content: 'Hello! My name is Oke Michael, i am a software engineer based in Nigeria. I spend most of time on the web which means i focus majorly on the web.' },
         { name: 'keywords', content: ['Oke Michael','Mykelcodex','Michael Oke','Software Engineer in Nigeria','Software','Laravel Developer','Vuejs Developer','Open Source','Develop Community','PHP','Javascript'] },
