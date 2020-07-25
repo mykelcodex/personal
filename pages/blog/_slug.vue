@@ -4,6 +4,7 @@
       <div>
         <div class="max-w-3xl mx-auto">
           <h2 class="text-2xl md:text-3xl lg:text-4xl text-white font-semibold">{{ post.title }}</h2>
+          <p class="mt-3 mb-6 lg:mb-10 text-light-purple">{{ post.createdAt | toDate }}</p>
           <div class="markdown py-10">
             <nuxt-content :document="post" />
           </div>
