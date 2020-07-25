@@ -52,6 +52,10 @@ export default {
     '@nuxtjs/tailwindcss',
   ],
   /*
+  ** Customize the progress-bar color
+  */
+  loading: { color: '#FFC25C' },
+  /*
   ** Nuxt.js modules
   */
   modules: [

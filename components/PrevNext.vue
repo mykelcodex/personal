@@ -8,7 +8,7 @@
               <path d="M7 16L3 12M3 12L7 8M3 12L21 12" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <div class="ml-3">
+          <div class="ml-3 hidden md:block">
             <p>{{ surround[0].title.substring(0, 30) + '...' }}</p>
           </div>
         </div>
@@ -17,7 +17,7 @@
     <div>
       <nuxt-link v-if="surround[1]" :to="surround[1].path" class="PrevNext-next">
         <div class="flex max-w-xs px-4 py-4 rounded-md hover:shadow text-light-purple hover:bg-yellow hover:text-white border-2 border-yellow transition ease-out duration-700">
-          <div class="mr-3">
+          <div class="mr-3 hidden md:block">
             <p>{{ surround[1].title.substring(0, 30) }}</p>
           </div>
           <div>
