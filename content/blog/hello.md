@@ -7,6 +7,8 @@ description: A step by step guide to build a static site with Nuxt, the Nuxt Con
 Static website with Nuxt & Forestry as a headless CMS
 
 ```js
+```js<script>
+export default {
 head () {
     return {
       title: 'Oke Michael | Software Engineer',
@@ -24,4 +26,6 @@ head () {
     }
   }
 }
+</script>
+```
 ```
