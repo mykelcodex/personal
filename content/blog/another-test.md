@@ -10,39 +10,63 @@ Hello! My name is Oke Michael, i am a software engineer based in Nigeria. I spen
 
 Mentors: [Taylor Otwell](htts://twitter.com/taylorotwell), [Evan You](https://twitter.com/youyuxi), [Adam Wathan](https://twitter.com/adamwathan), [Jeffrey Way](https://twitter/jeffrey_way), [Jonathan Reinink](https://twitter.com/reinink).
 
-{1,3-5}\[server.php\]
+\`\`\`php {1,3-5}\[server.php\]
 
-```php
- public function adddoctor(Request $request){
+public function adddoctor(Request $request){
+
         
+
         $dob = Carbon::parse($request->dob)->toDateString();
-        User::create([
+
+        User::create(\[
+
             'name'=>$request->firstname.' '.$request->lastname,
+
             'email'=>$request->email,
+
             'phone'=>$request->phone,
+
             'gender'=>$request->gender,
+
             'dob'=>$dob,
-            'country'=>$request->country['name'],
-            'state'=>$request->state['name'],
+
+            'country'=>$request->country\['name'\],
+
+            'state'=>$request->state\['name'\],
+
             'address'=>$request->address,
+
             'role'=>'doctor',
+
             'password'=>bcrypt($request->phone),
-        ])->doctors()->create([
+
+        \])->doctors()->create(\[
+
             'residency'=>$request->residency,
+
             'fellowship'=>$request->fellowship,
-            'license_country'=>$request->license_country['name'],
-            'license_state'=>$request->license_state['name'],
+
+            'license_country'=>$request->license_country\['name'\],
+
+            'license_state'=>$request->license_state\['name'\],
+
             'license'=>$request->license,
+
             'expiration'=>$request->expiration,
+
             'specialty'=>$request->specialty,
+
             'degree'=>$request->degree,
 
-        ]);
+        \]);
+
         return response()->json('Doctor added successfully', 200);
 
         
+
     }
-```
+
+\`\`\`
 
 just testing again
 
