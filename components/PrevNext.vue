@@ -1,8 +1,8 @@
 <template>
-  <div class="PrevNext flex justify-between">
+  <div class="PrevNext flex justify-between px-6 sm:px-10 lg:px-20 xl:px-32">
     <div>
       <nuxt-link v-if="surround[0]" :to="surround[0].path" class="PrevNext-prev">
-        <div class="flex max-w-xs px-4 py-4 rounded-md hover:shadow text-light-purple hover:bg-yellow hover:text-white border-2 border-yellow transition ease-out duration-700">
+        <div class="flex max-w-xs px-2 md:px-4 py-2 md:py-4 rounded-md hover:shadow text-light-purple hover:bg-yellow hover:text-white border-2 border-yellow transition ease-out duration-700">
           <div>
             <svg width="24" class="stroke-current" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 16L3 12M3 12L7 8M3 12L21 12" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
