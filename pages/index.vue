@@ -80,7 +80,7 @@
           <div class="bg-purple-dark rounded-lg">
             <div class="flex flex-wrap justify-between">
               <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10  lg:pl-10 ">
-                <a href="https://careclick.healthcare"><img src="images/careclick1.png" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-t lg:rounded" alt="CareClick"></a>
+                <a href="https://careclick.healthcare"><img src="images/careclick1.jpg" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-t lg:rounded" alt="CareClick"></a>
               </div>
               <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10 ">
                 <div class="px-4 py-4 lg:py-0 lg:px-0">
@@ -96,7 +96,7 @@
           <div class="bg-purple-dark rounded-lg">
             <div class="flex flex-wrap justify-between">
               <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10  lg:pl-10 ">
-                <a href="https://tradersfield.org"><img src="images/trader.png" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-t lg:rounded" alt="Tradersfield"></a>
+                <a href="https://tradersfield.org"><img src="images/trader.jpg" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-t lg:rounded" alt="Tradersfield"></a>
               </div>
               <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10 ">
                 <div class="px-4 py-4 lg:py-0 lg:px-0">
@@ -112,7 +112,7 @@
           <div class="bg-purple-dark rounded-lg">
             <div class="flex flex-wrap justify-between">
               <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10  lg:pl-10 ">
-                <a href="http://agribusinesscapitalng.com/"><img src="images/agric.png" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-t lg:rounded" alt="Agribusiness Capital"></a>
+                <a href="http://agribusinesscapitalng.com/"><img src="images/agric.jpg" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-t lg:rounded" alt="Agribusiness Capital"></a>
               </div>
               <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10 ">
                 <div class="px-4 py-4 lg:py-0 lg:px-0">
@@ -226,7 +226,7 @@ head () {
         { name: 'twitter:title', content: 'Oke Michael - Software Engineer' },
         { name: 'twitter:description', content: 'Hello! My name is Oke Michael, i am a software engineer based in Nigeria. I focus majorly on the web..' },
         { name: 'twitter:site', content: '@mykelcodex' },
-        { name: 'twitter:image', content: 'https://competent-dijkstra-85c176.netlify.app/images/homepage.png' },
+        { name: 'twitter:image', content: 'https://competent-dijkstra-85c176.netlify.app/images/homepage.jpg' },
         { name: 'twitter:creator', content: '@mykelcodex' },
       ],
     }
