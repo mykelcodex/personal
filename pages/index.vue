@@ -215,7 +215,7 @@
 
 <script>
 export default {
-head () {
+head() {
     return {
       title: 'Oke Michael - Software Engineer',
       meta: [
