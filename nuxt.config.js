@@ -23,7 +23,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/images/favicon-32x32.png' },
-      { rel: 'icon', type: 'image/png', href: '/images/favicon-16x16.png' }
+      { rel: 'icon', type: 'image/png', href: '/images/favicon-16x16.png' },
     ]
   },
   /*

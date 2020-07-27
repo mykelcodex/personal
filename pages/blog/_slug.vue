@@ -11,7 +11,7 @@
         </div>
       </div>
     </div>
-    <div class="max-w-3xl mx-auto pt-5 pb-8">
+    <div class="max-w-3xl mx-auto pt-5 pb-8 px-6 sm:px-10 lg:px-20 xl:px-32">
       <div id="disqus_thread"></div>
     </div>
     <div class="max-w-3xl mx-auto pt-10 pb-8 md:pb-16">
