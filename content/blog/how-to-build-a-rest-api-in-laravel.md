@@ -13,25 +13,25 @@ An **API** is an application programming interface. It is a set of rules that al
 
 Laravel API makes API Authentication using Laravel Passport, which provides a full OAuth2 implementation.
 
-#### Step 1: Install Laravel using composer, a php package manager
+#### **Step 1: Install Laravel using composer, a php package manager**
 
 Read more about setting up Laravel using composer on the [Laravel documentation](https://laravel.com/docs/5.8 "Laravel Documentation")
 
     composer create-project --prefer-dist laravel/laravel api
 
-#### Step 2: Install Laravel Passport
+#### **Step 2: Install Laravel Passport**
 
 Navigate to your project directory `cd api`  and install Laravel passport using composer 
 
     composer require laravel/passport
 
-#### Step 3: Run passport migration
+#### **Step 3: Run passport migration**
 
 We will go ahead and run all passport migrations, this will create some tables in our database.
 
     php artisan migrate
 
-#### Run passport install command
+#### **Run passport install command**
 
 This command will create the encryption keys needed to generate secure access tokens.
 
