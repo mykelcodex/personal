@@ -12,10 +12,13 @@
           <div class="flex-1 flex flex-col justify-between">
             <div class="text-white mt-2 p-3">
               <nuxt-link :to="post.path"><h2 class="text-xl xl:text-2xl font-bold">{{ post.title }}</h2></nuxt-link>
-              <nuxt-link :to="post.path"><div class="mt-2 font-light text-light-purple">{{ post.body.children[0].children[0].value.substring(0, 150) + '...' }}</div></nuxt-link>
+              <nuxt-link :to="post.path"><div class="mt-2 font-light text-light-purple">{{ post.description.substring(0, 150) + '...' }}</div></nuxt-link>
             </div>
-            <div class="inline-flex items-center border-t border-yellow py-2">
-              <p class="px-3 text-light-purple text-sm">{{ post.createdAt | toDate }}</p>
+            <div class="flex items-center border-t border-yellow py-2 px-3">
+              <svg class="text-light-purple stroke-current" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 7V3M16 7V3M7 11H17M5 21H19C20.1046 21 21 20.1046 21 19V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V19C3 20.1046 3.89543 21 5 21Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <p class="ml-2 text-light-purple text-sm">{{ post.createdAt | toDate }}</p>
             </div>
           </div>
         </div>
