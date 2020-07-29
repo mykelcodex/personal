@@ -41,7 +41,7 @@ This command will create the encryption keys needed to generate secure access to
 
 Let us configure passport
 
-* Add the Laravel\\Passport\\HasApiTokens trait to your App/User model.
+* Add the `Laravel\Passport\HasApiTokens` trait to your App/User model.
 
 App\\User.php
 
