@@ -88,7 +88,7 @@ App\\User.php
 
 * The next step is to register our passport routes, `Passport::routes()` method within the `boot` method of your `AuthServiceProvider`
 
-App\\Providers\\AuthServiceProvider.php
+App/Providers/AuthServiceProvider.php
 
     <?php
     
@@ -121,3 +121,72 @@ App\\Providers\\AuthServiceProvider.php
             Passport::routes();
         }
     }
+
+* Lastly, we are going to alter the driver of our api in `config\auth`
+
+config/auth.php
+
+    <?php
+    
+    return [
+    
+        'defaults' => [
+            'guard' => 'web',
+            'passwords' => 'users',
+        ],
+    
+        'guards' => [
+            'web' => [
+                'driver' => 'session',
+                'provider' => 'users',
+            ],
+    
+            'api' => [
+                'driver' => 'passport',
+                'provider' => 'users',
+                'hash' => false,
+            ],
+        ],
+    
+        'providers' => [
+            'users' => [
+                'driver' => 'eloquent',
+                'model' => App\User::class,
+            ],
+    
+            // 'users' => [
+            //     'driver' => 'database',
+            //     'table' => 'users',
+            // ],
+        ],
+    
+      
+    
+        'passwords' => [
+            'users' => [
+                'provider' => 'users',
+                'table' => 'password_resets',
+                'expire' => 60,
+            ],
+        ],
+    
+    ];
+
+#### Step 6: **Create API routes**
+
+routes/api.php
+
+    <?php
+    
+    use Illuminate\Http\Request;
+    
+    Route::group([ 'prefix' => 'v1/auth'], function (){ 
+        Route::group(['middleware' => ['guest:api']], function () {
+            Route::post('login', 'API\AuthController@login');
+            Route::post('signup', 'API\AuthController@signup');
+        });
+        Route::group(['middleware' => 'auth:api'], function() {
+            Route::get('logout', 'API\AuthController@logout');
+            Route::get('getuser', 'API\AuthController@getUser');
+        });
+    }); 
