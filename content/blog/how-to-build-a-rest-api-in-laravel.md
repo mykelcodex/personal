@@ -13,6 +13,8 @@ An **API** is an application programming interface. It is a set of rules that al
 
 Laravel API makes API Authentication using Laravel Passport, which provides a full OAuth2 implementation.
 
-##### Step 1: Install Laravel using composer, a php package manager
+#### Step 1: Install Laravel using composer, a php package manager
+
+Read more about setting up Laravel using composer on your PC
 
     composer create-project --prefer-dist laravel/laravel blog
