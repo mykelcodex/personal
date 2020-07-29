@@ -92,103 +92,109 @@ class User extends Authenticatable
 
 App/Providers/AuthServiceProvider.php
 
-    <?php
-    
-    namespace App\Providers;
-    use Laravel\Passport\Passport;
-    use Illuminate\Support\Facades\Gate;
-    use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
-    
-    class AuthServiceProvider extends ServiceProvider
+```php
+<?php
+
+namespace App\Providers;
+use Laravel\Passport\Passport;
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+
+class AuthServiceProvider extends ServiceProvider
+{
+    /**
+     * The policy mappings for the application.
+     *
+     * @var array
+     */
+    protected $policies = [
+        // 'App\Model' => 'App\Policies\ModelPolicy',
+    ];
+
+    /**
+     * Register any authentication / authorization services.
+     *
+     * @return void
+     */
+    public function boot()
     {
-        /**
-         * The policy mappings for the application.
-         *
-         * @var array
-         */
-        protected $policies = [
-            // 'App\Model' => 'App\Policies\ModelPolicy',
-        ];
-    
-        /**
-         * Register any authentication / authorization services.
-         *
-         * @return void
-         */
-        public function boot()
-        {
-            $this->registerPolicies();
-    
-            //
-            Passport::routes();
-        }
+        $this->registerPolicies();
+
+        //
+        Passport::routes();
     }
+}
+```
 
 * Lastly, we are going to alter the driver of our api in `config\auth`
 
 config/auth.php
 
-    <?php
-    
-    return [
-    
-        'defaults' => [
-            'guard' => 'web',
-            'passwords' => 'users',
+```php
+<?php
+
+return [
+
+    'defaults' => [
+        'guard' => 'web',
+        'passwords' => 'users',
+    ],
+
+    'guards' => [
+        'web' => [
+            'driver' => 'session',
+            'provider' => 'users',
         ],
-    
-        'guards' => [
-            'web' => [
-                'driver' => 'session',
-                'provider' => 'users',
-            ],
-    
-            'api' => [
-                'driver' => 'passport',
-                'provider' => 'users',
-                'hash' => false,
-            ],
+
+        'api' => [
+            'driver' => 'passport',
+            'provider' => 'users',
+            'hash' => false,
         ],
-    
-        'providers' => [
-            'users' => [
-                'driver' => 'eloquent',
-                'model' => App\User::class,
-            ],
-    
-            // 'users' => [
-            //     'driver' => 'database',
-            //     'table' => 'users',
-            // ],
+    ],
+
+    'providers' => [
+        'users' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
         ],
-    
-      
-    
-        'passwords' => [
-            'users' => [
-                'provider' => 'users',
-                'table' => 'password_resets',
-                'expire' => 60,
-            ],
+
+        // 'users' => [
+        //     'driver' => 'database',
+        //     'table' => 'users',
+        // ],
+    ],
+
+  
+
+    'passwords' => [
+        'users' => [
+            'provider' => 'users',
+            'table' => 'password_resets',
+            'expire' => 60,
         ],
-    
-    ];
+    ],
+
+];
+```
 
 #### Step 6: **Create API routes**
 
 routes/api.php
 
-    <?php
-    
-    use Illuminate\Http\Request;
-    
-    Route::group([ 'prefix' => 'v1/auth'], function (){ 
-        Route::group(['middleware' => ['guest:api']], function () {
-            Route::post('login', 'API\AuthController@login');
-            Route::post('signup', 'API\AuthController@signup');
-        });
-        Route::group(['middleware' => 'auth:api'], function() {
-            Route::get('logout', 'API\AuthController@logout');
-            Route::get('getuser', 'API\AuthController@getUser');
-        });
-    }); 
+```php
+<?php
+
+use Illuminate\Http\Request;
+
+Route::group([ 'prefix' => 'v1/auth'], function (){ 
+    Route::group(['middleware' => ['guest:api']], function () {
+        Route::post('login', 'API\AuthController@login');
+        Route::post('signup', 'API\AuthController@signup');
+    });
+    Route::group(['middleware' => 'auth:api'], function() {
+        Route::get('logout', 'API\AuthController@logout');
+        Route::get('getuser', 'API\AuthController@getUser');
+    });
+}); 
+```
