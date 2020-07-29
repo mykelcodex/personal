@@ -15,6 +15,6 @@ Laravel API makes API Authentication using Laravel Passport, which provides a fu
 
 #### Step 1: Install Laravel using composer, a php package manager
 
-Read more about setting up Laravel using composer on your PC
+Read more about setting up Laravel using composer on [Laravel documentation](https://laravel.com/docs/5.8 "Laravel Documentation")
 
     composer create-project --prefer-dist laravel/laravel blog
