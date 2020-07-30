@@ -9,7 +9,7 @@ description: Let us build a REST API using Laravel and a package called passport
 
 **What is an API?**
 
-An **API** is an application programming interface. It is a set of rules that allow programs to talk to each other. The developer creates the API on the server and allows the client to talk to it. API is stateless which means they are not sustained by sessions. They use a **token** as a means of authentication. 
+An **API** is an application programming interface. It is a set of rules that allow programs to talk to each other. The developer creates the API on the server and allows the client to talk to it. API is stateless which means they are not sustained by sessions. They use a **token** as a means of authentication.
 
 Laravel API makes API Authentication using Laravel Passport, which provides a full OAuth2 implementation.
 
@@ -21,7 +21,7 @@ Read more about setting up Laravel using composer on the [Laravel documentation]
 
 #### **Step 2: Install Laravel Passport**
 
-Navigate to your project directory `cd api`  and install Laravel passport using composer 
+Navigate to your project directory `cd api`  and install Laravel passport using composer
 
     composer require laravel/passport
 
@@ -43,7 +43,7 @@ Let us configure passport
 
 * Add the `Laravel\Passport\HasApiTokens` trait to your `App/User` model.
 
-App\\User.php
+App/User.php
 
 ```php
 <?php
@@ -159,10 +159,10 @@ return [
             'model' => App\User::class,
         ],
 
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+         'users' => [
+             'driver' => 'database',
+             'table' => 'users',
+         ],
     ],
 
   
@@ -194,7 +194,111 @@ Route::group([ 'prefix' => 'v1/auth'], function (){
     });
     Route::group(['middleware' => 'auth:api'], function() {
         Route::get('logout', 'API\AuthController@logout');
-        Route::get('getuser', 'API\AuthController@getUser');
+        Route::get('me', 'API\AuthController@me');
     });
 }); 
+```
+
+#### **Step 7: Let us create our AuthController**
+
+You can generate it using `php artisan make:controller AuthController`
+
+App/Http/Controllers/API/AuthController.php
+
+```php
+<?php
+
+namespace App\Http\Controllers\API;
+
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
+use App\User;
+use Validator;
+
+class AuthController extends Controller
+{
+    //create user
+    public function signup(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|',
+            'email' => 'required|string|email|unique:users',
+            'password' => 'required',
+            'confirm_password' => 'required|same:password'
+        ]);
+
+        if($validator->fails()){
+            return response()->json($validator->errors(), 422);       
+        }
+
+        $input = $request->all();
+        $input['password'] = bcrypt($input['password']);
+        $user = User::create($input);
+        if($user){
+            $success['token'] =  $user->createToken('token')->accessToken;
+            $success['message'] = "Registration was successfull";
+            return response()->json($success, 200);
+        }
+        else{
+            $error = "Sorry! Registration is not successfull.";
+            return response()->json($error, 401); 
+        }
+        
+    }
+    
+    //login
+    public function login(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'email' => 'required|string|email',
+            'password' => 'required'
+        ]);
+
+        if($validator->fails()){
+            return response()->json($validator->errors(), 422);       
+        }
+
+        $credentials = request(['email', 'password']);
+        if(!Auth::attempt($credentials)){
+            $error = "Invalid Credentials";
+            return response()->json($error, 401);
+        }
+        $user = $request->user();
+        $success['token'] =  $user->createToken('token')->accessToken;
+        return $this->sendResponse($success);
+    }
+
+    //logout
+    public function logout(Request $request)
+    {
+        
+        $user = $request->user()->token()->revoke();
+        if($user){
+            $success['message'] = "Successfully logged out.";
+            return response()->json($success, 200);
+        }
+        else{
+            $error = "Something went wrong, try again.";
+            return response()->json($error, 401);
+        }
+            
+        
+    }
+
+    //me
+    public function me(Request $request)
+    {
+        //$id = $request->user()->id;
+        $user = $request->user();
+        if($user){
+            return response()->json($user, 200);
+        }
+        else{
+            $error = "user not found";
+            return response()->json($error, 401);
+        }
+    }
+}
 ```
