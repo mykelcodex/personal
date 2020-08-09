@@ -10,7 +10,7 @@
           <div class="mt-8 lg:mt-10">
             <p class="text-lg leading-relaxed text-light-purple font-light text-center lg:text-left">
               Hello! My name is Oke Michael, i am a software engineer based in Nigeria. I spend most of my time on the web which means i focus majorly on the web&#128540;. I am a huge fan of PHP and Javascript even after the release of PHP 7 which is super fast &#128525;. I have built a good number of
-              applications using PHP and Javascript. These days, i focus on building web interfaces, API and microservies with <a href="https://laravel.com" class="link underline">Laravel</a>,<a href="https://lumen.laravel.com/" class="link underline">Lumen</a>,<a href="https://vuejs.org" class="link underline">Vuejs</a> and <a href="https://tailwindcss.com" class="link underline">TailwindCSS</a>.
+              applications using PHP and Javascript. These days, i focus on building web interfaces, API and microservies with <a href="https://laravel.com" class="link underline">Laravel</a>, <a href="https://lumen.laravel.com/" class="link underline">Lumen</a>, <a href="https://vuejs.org" class="link underline">Vuejs</a> and <a href="https://tailwindcss.com" class="link underline">TailwindCSS</a>.
               I love to contribute to the open source community. I also get my hands typing with tools like <a href="https://nuxtjs.org/" class="link underline">NuxtJS</a>, <a href="https://inertiajs.com/" class="link underline">InertiaJS</a> and <a href="https://github.com/alpinejs/alpine" class="link underline">AplineJS</a> based on the project and client's requirement.
             </p>
             <p class="mt-2 text-lg leading-relaxed text-light-purple font-light text-center lg:text-left">
