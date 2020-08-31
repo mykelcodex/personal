@@ -198,7 +198,7 @@
                             </span>
                           </div>
                           <div class="ml-5 md:ml-8">
-                            <a href="mailto:hi@omike.me?subject=Hello, from this side" target="_blank"><p class="text-sm md:text-base text-yellow underline">hi@omike.me</p></a>
+                            <a href="mailto:okesm@yahoo.com?subject=Hello, from this side" target="_blank"><p class="text-sm md:text-base text-yellow underline">okesm@yahoo.com</p></a>
                           </div>
                         </div>
                       </div>
