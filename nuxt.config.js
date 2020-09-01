@@ -68,7 +68,7 @@ export default {
   sitemap: {
     hostname: process.env.BASE_URL || 'https://mykeel.dev',
     routes: async () => {
-      if (process.env.NODE_ENV !== 'production') return
+      // if (process.env.NODE_ENV !== 'production') return
       const { $content } = require('@nuxt/content')
     
       const posts = await $content('blog')
