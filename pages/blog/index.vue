@@ -52,14 +52,14 @@ export default {
         title: 'Oke Michael - Software Engineer',
         meta: [
           { hid: 'description', name: 'description', content: 'Blog posts' },
-          { name: 'keywords', content: ['PHP','Javascript','VueJS','Laravel','ReactJS','Lodash','NuxtJS','WebSocket','InertiaJS'] },
-          { name: 'robots', content: 'all' },
-          { name: 'twitter:card', content: 'summary_large_image' },
-          { name: 'twitter:title', content: 'Oke Michael - Software Engineer' },
-          { name: 'twitter:description', content: 'Hello! My name is Oke Michael, i am a software engineer based in Nigeria. I focus majorly on the web..' },
-          { name: 'twitter:site', content: '@mykelcodex' },
-          { name: 'twitter:image', content: 'https://mykeel.dev/images/homepage.jpg' },
-          { name: 'twitter:creator', content: '@mykelcodex' },
+          { hid: 'keywords', name: 'keywords', content: ['PHP','Javascript','VueJS','Laravel','ReactJS','Lodash','NuxtJS','WebSocket','InertiaJS'] },
+          { hid: 'robots', name: 'robots', content: 'all' },
+          { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+          { hid: 'twitter:title', name: 'twitter:title', content: 'Oke Michael - Software Engineer' },
+          { hid: 'twitter:description', name: 'twitter:description', content: 'Hello! My name is Oke Michael, i am a software engineer based in Nigeria. I focus majorly on the web..' },
+          { hid: 'twitter:site', name: 'twitter:site', content: '@mykelcodex' },
+          { hid: 'twitter:image', name: 'twitter:image', content: 'https://mykeel.dev/images/homepage.jpg' },
+          { hid: 'twitter:creator', name: 'twitter:creator', content: '@mykelcodex' },
         ],
         link:[
           {
