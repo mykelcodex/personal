@@ -38,6 +38,7 @@ export default {
   */
   plugins: [
     "~/plugins/day",
+    { src: '~plugins/ga.js', mode: 'client' }
   ],
   /*
   ** Auto import components
@@ -65,12 +66,16 @@ export default {
     '@nuxtjs/sitemap',
   ],
   sitemap: {
-    hostname: 'https://mykeel.dev',
-    filter ({ routes }) {
-      return routes.map(route => {
-        route.url = `${route.url}/`
-        return route
-      })
+    hostname: process.env.BASE_URL || 'https://mykeel.dev',
+    routes: async () => {
+      // if (process.env.NODE_ENV !== 'production') return
+      const { $content } = require('@nuxt/content')
+    
+      const posts = await $content('blog')
+        .only(['path'])
+        .fetch()
+    
+      return posts.map((p) => p.path)
     }
   },
   /*
