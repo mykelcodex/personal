@@ -10,8 +10,8 @@
           <div class="mt-8 lg:mt-10">
             <p class="text-lg leading-relaxed text-light-purple font-light text-center lg:text-left">
               Hello! My name is Oke Michael, i am a software engineer based in Nigeria. I spend most of my time on the web which means i focus majorly on the web&#128540;. I am a huge fan of PHP and Javascript even after the release of PHP 7 which is super fast &#128525;. I have built a good number of
-              applications using PHP and Javascript. These days, i focus on building web interfaces, APIs and microservices with <a href="https://laravel.com" class="link underline">Laravel</a>, <a href="https://lumen.laravel.com/" class="link underline">Lumen</a>, <a href="https://vuejs.org" class="link underline">Vue.js</a> and <a href="https://tailwindcss.com" class="link underline">TailwindCSS</a>.
-              I love to contribute to the open source community. I also get my hands typing with tools like <a href="https://nuxtjs.org/" class="link underline">Nuxt.js</a>, <a href="https://inertiajs.com/" class="link underline">Inertia.js</a> and <a href="https://github.com/alpinejs/alpine" class="link underline">Apline.js</a> based on the project and client's requirement.
+              applications using PHP and Javascript. These days, i focus on building web interfaces, APIs and microservices with <a target="_blank" href="https://laravel.com" class="link underline">Laravel</a>, <a target="_blank" href="https://lumen.laravel.com/" class="link underline">Lumen</a>, <a target="_blank" href="https://vuejs.org" class="link underline">Vue.js</a> and <a target="_blank" href="https://tailwindcss.com" class="link underline">TailwindCSS</a>.
+              I love to contribute to the open source community. I also get my hands typing with tools like <a target="_blank" href="https://nuxtjs.org/" class="link underline">Nuxt.js</a>, <a target="_blank" href="https://inertiajs.com/" class="link underline">Inertia.js</a> and <a target="_blank" href="https://github.com/alpinejs/alpine" class="link underline">Apline.js</a> based on the project and client's requirement.
             </p>
             <p class="mt-2 text-lg leading-relaxed text-light-purple font-light text-center lg:text-left">
               Mentors: <a href="htts://twitter.com/taylorotwell" target="_blank" class="link underline">Taylor Otwell</a>, <a href="https://twitter.com/youyuxi" target="_blank" class="link underline">Evan You</a>, <a href="https://twitter.com/adamwathan" target="_blank" class="link underline">Adam Wathan</a>, <a href="https://twitter/jeffrey_way" target="_blank" class="link underline">Jeffrey Way</a>, <a href="https://twitter.com/reinink" target="_blank" class="link underline">Jonathan Reinink</a>.
@@ -131,7 +131,7 @@
               </div>
               <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10 ">
                 <div class="px-4 py-4 lg:py-0 lg:px-0">
-                  <h2 class="text-white font-bold text-xl xl:text-2xl">Internation Percussion Federation</h2>
+                  <h2 class="text-white font-bold text-xl xl:text-2xl">International Percussion Federation</h2>
                   <p class="text-light-purple mt-2 xl:mt-4">
                     IPF is an online drumming competion which allows participant from all over the world to upload 
                     a short video based on thier category and country. Adjudicators are available from all over the world as well to
