@@ -11,7 +11,7 @@ A web API has the following characteristics :
 
 * Programmatic interface
 * Endpoints
-* Request-response message 
+* Request-response message
 * JSON or XML
 * Stateless
 
@@ -28,7 +28,7 @@ A web API has the following characteristics :
 
 **CONSTRAINT**
 
-* APIs are stateless, which means no client context stored between request(no session). API uses **token** as a means of authorization
+* APIs are stateless, which means no client context stored between request(no session). API uses **token** as a means of authorization.
 
 Laravel API makes API Authentication using Laravel Passport, which provides a full OAuth2 implementation.
 
