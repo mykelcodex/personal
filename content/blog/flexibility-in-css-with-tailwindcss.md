@@ -13,7 +13,7 @@ Bootstrap widgets come with default color and a style of design, customizing it 
 
 #### **Design Style**
 
-Changing the bootstrap design style takes a lot of time and effort.  About 50% of the website using bootstrap was unknown because of the design style because building a custom design in bootstrap is tedious.
+Changing the bootstrap design style takes a lot of time and effort.  About 50% of the website using bootstrap was known because of the design style because building a custom design in bootstrap is tedious.
 
 #### **Color Palette**
 
