@@ -13,4 +13,5 @@ fields:
     required: false
   label: Description
 pages:
+- content/blog/flexibility-in-css-with-tailwindcss.md
 - content/blog/how-to-build-a-rest-api-in-laravel.md
