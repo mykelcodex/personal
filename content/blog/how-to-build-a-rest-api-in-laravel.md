@@ -30,7 +30,7 @@ A web API has the following characteristics :
 
 * APIs are stateless, which means no client context stored between request(no session). API uses **token** as a means of authorization.
 
-Laravel API makes API Authentication using Laravel Passport, which provides a full OAuth2 implementation.
+Laravel uses Laravel Passport, which provides a full OAuth2 implementation.
 
 #### **Step 1: Install Laravel using composer, a php package manager**
 
