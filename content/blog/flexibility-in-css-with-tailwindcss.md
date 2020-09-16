@@ -7,7 +7,7 @@ Not until today, BootstrapCSS is the most used CSS Framework. It provides some a
 
 I have been a front-end developer for 4 years now, and [Bootstrap CSS](https://bootstrap.com "BootstrapCSS")  and has been my major CSS framework, I love it then because of rapid development in my projects but there were certain concerns that I have with it.
 
-* Imposes Design
+* **Imposes Design**
 
   Bootstrap widgets come with default color and a style of design, customizing it to your own taste can be tiring.
 * **Design Style**
