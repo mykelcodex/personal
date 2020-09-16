@@ -3,13 +3,32 @@ title: How to build a REST API in Laravel
 description: Let us build a REST API using Laravel and a package called passport
 
 ---
-### **What is REST?**
+### **What is an API?**
 
-**Representational state transfer** (**REST**) is a [software architectural](https://en.wikipedia.org/wiki/Software_architecture "Software architecture") [style](https://en.wikipedia.org/wiki/Architectural_style "Architectural style") that defines a set of constraints to be used for creating [Web services](https://en.wikipedia.org/wiki/Web_service "Web service"). Web services that conform to the REST architectural style, called _RESTful_ Web services, provide interoperability between computer systems on the [Internet](https://en.wikipedia.org/wiki/Internet "Internet"). RESTful Web services allow the requesting systems to access and manipulate textual representations of [Web resources](https://en.wikipedia.org/wiki/Web_resource "Web resource") by using a uniform and predefined set of [stateless](https://en.wikipedia.org/wiki/Stateless_protocol "Stateless protocol") operations.\[[wiki](https://en.wikipedia.org/wiki/Representational_state_transfer "wikipedia")\]. In short, **REST** determines how the API looks.
+An server-side web **API** is a programmatic interface consisting of one or more publicly exposed endpoints to define a request. The response message usually returns a JSON or XML format.
 
-**What is an API?**
+A web API has the following characteristics :
 
-An **API** is an application programming interface. It is a set of rules that allow programs to talk to each other. The developer creates the API on the server and allows the client to talk to it. API is stateless which means they are not sustained by sessions. They use a **token** as a means of authentication.
+* Programmatic interface
+* Endpoints
+* Request-response message 
+* JSON or XML
+* Stateless
+
+#### **What is REST?**
+
+* An architecture
+* Centres on the transfer of presentations of resources
+* A client makes a request when it wants a change of state
+
+**STRENGTHS**
+
+* Leverages on the power of HTTP
+* Part by part or loose coupling
+
+**CONSTRAINT**
+
+* APIs are stateless, which means no client context stored between request(no session). API uses **token** as a means of authorization
 
 Laravel API makes API Authentication using Laravel Passport, which provides a full OAuth2 implementation.
 
@@ -43,7 +62,7 @@ Let us configure passport
 
 * Add the `Laravel\Passport\HasApiTokens` trait to your `App/User` model.
 
-App/User.php
+`App/User.php`
 
 ```php
 <?php
@@ -90,7 +109,7 @@ class User extends Authenticatable
 
 * The next step is to register our passport routes, `Passport::routes()` method within the `boot` method of your `AuthServiceProvider`
 
-App/Providers/AuthServiceProvider.php
+`App/Providers/AuthServiceProvider.php`
 
 ```php
 <?php
@@ -128,7 +147,7 @@ class AuthServiceProvider extends ServiceProvider
 
 * Lastly, we are going to alter the driver of our api in `config\auth`
 
-config/auth.php
+`config/auth.php`
 
 ```php
 <?php
@@ -180,7 +199,7 @@ return [
 
 #### Step 6: **Create API routes**
 
-routes/api.php
+`routes/api.php`
 
 ```php
 <?php
@@ -199,11 +218,51 @@ Route::group([ 'prefix' => 'v1/auth'], function (){
 }); 
 ```
 
-#### **Step 7: Let us create our AuthController**
+#### **Step 7: Create API Responser**
+
+We are going to create our API responser by creating a `Traits` folder in our `App` folder, so our path looks like this `App\Traits`
+
+```php
+<?php
+
+namespace App\Traits;
+use Illuminate\Http\Response;
+
+trait ApiResponser{
+    
+    /**
+     * Build success response
+     *
+     * @param  string|array $data
+     * @param  int $code
+     * @return json
+     */
+    public function successResponse($data, $code = Response::HTTP_OK)
+    {
+      return response()->json(['data'=>$data], $code);
+    }
+
+
+    /**
+     * Build error response
+     *
+     * @param  string|array $data
+     * @param  int $code
+     * @return json
+     */
+    public function errorResponse($message, $code)
+    {
+      return response()->json(['error'=>$message,'code'=>$code], $code);
+    }
+
+}
+```
+
+#### **Step 8: Let us create our AuthController**
 
 You can generate it using `php artisan make:controller AuthController`
 
-App/Http/Controllers/API/AuthController.php
+`App/Http/Controllers/API/AuthController.php`
 
 ```php
 <?php
@@ -214,23 +273,25 @@ namespace App\Http\Controllers\API;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use App\Traits\ApiResponser;
 use App\User;
 use Validator;
 
 class AuthController extends Controller
 {
+	use ApiResponser;
     //create user
     public function signup(Request $request)
     {
-        $validator = Validator::make($request->all(), [
+        $v = Validator::make($request->all(), [
             'name' => 'required|string|',
             'email' => 'required|string|email|unique:users',
             'password' => 'required',
             'confirm_password' => 'required|same:password'
         ]);
 
-        if($validator->fails()){
-            return response()->json($validator->errors(), 422);       
+        if($v->fails()){
+            return $this->errorResponse($v->errors(), 422);       
         }
 
         $input = $request->all();
@@ -239,11 +300,11 @@ class AuthController extends Controller
         if($user){
             $success['token'] =  $user->createToken('token')->accessToken;
             $success['message'] = "Registration was successfull";
-            return response()->json($success, 200);
+            return $this->successResponse($success);
         }
         else{
             $error = "Sorry! Registration is not successfull.";
-            return response()->json($error, 401); 
+            return $this->errorResponse($error, 401); 
         }
         
     }
@@ -256,18 +317,18 @@ class AuthController extends Controller
             'password' => 'required'
         ]);
 
-        if($validator->fails()){
-            return response()->json($validator->errors(), 422);       
+        if($v->fails()){
+            return $this->errorResponse($v->errors(), 422);       
         }
 
         $credentials = request(['email', 'password']);
         if(!Auth::attempt($credentials)){
             $error = "Invalid Credentials";
-            return response()->json($error, 401);
+            return $this->errorResponse($error, 401);
         }
         $user = $request->user();
         $success['token'] =  $user->createToken('token')->accessToken;
-        return $this->sendResponse($success);
+        return $this->successResponse($success);
     }
 
     //logout
@@ -277,13 +338,12 @@ class AuthController extends Controller
         $user = $request->user()->token()->revoke();
         if($user){
             $success['message'] = "Successfully logged out.";
-            return response()->json($success, 200);
+            return $this->successResponse($success);
         }
         else{
             $error = "Something went wrong, try again.";
-            return response()->json($error, 401);
+            return $this->errorResponse($error, 401);
         }
-            
         
     }
 
@@ -292,11 +352,11 @@ class AuthController extends Controller
     {
         $user = $request->user();
         if($user){
-            return response()->json($user, 200);
+            return $this->successResponse($user);
         }
         else{
             $error = "user not found";
-            return response()->json($error, 401);
+            return $this->errorResponse($error, 401);
         }
     }
 }
