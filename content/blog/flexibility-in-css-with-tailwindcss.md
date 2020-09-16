@@ -7,15 +7,15 @@ Not until today, BootstrapCSS is the most used CSS Framework. It provides some a
 
 I have been a front-end developer for 4 years now, and [Bootstrap CSS](https://get.bootstrap.com "BootstrapCSS")  and has been my major CSS framework, I love it then because of rapid development in my projects but there were certain concerns that I have with it.
 
-**Imposes Design**
+#### **Imposes Design**
 
 Bootstrap widgets come with default color and a style of design, customizing it to your own taste can be tiring.
 
-**Design Style**
+#### **Design Style**
 
 Changing the bootstrap design style takes a lot of time and effort.  About 50% of the website using bootstrap was unknown because of the design style because building a custom design in bootstrap is tedious.
 
-**Color Palette**
+#### **Color Palette**
 
 Bootstrap does not provide much support for its color palette as the only colors provided are just ten.
 
@@ -23,15 +23,15 @@ I began a search for a new framework that will solve the above issues, then I ca
 
 ![](https://dotdev.co/wp-content/uploads/2019/06/stateofcss2019.png)
 
-**Utility first - Responsive to the core**
+#### **Utility first - Responsive to the core**
 
 Every Tailwind utility also comes with responsive variants, making it extremely easy to build responsive interfaces without resorting to custom CSS.
 
-**Component-friendly**
+#### **Component-friendly**
 
 While you can do a _lot_ with just utility classes, as a project grows it can be useful to codify common patterns into higher-level abstractions.
 
-**Designed to be customized**
+#### **Designed to be customized**
 
 If it makes sense to be customizable, Tailwind lets you customize it. This includes colors, border sizes, font weights, spacing utilities, breakpoints, shadows, and tons more.
 
@@ -72,7 +72,7 @@ module.exports = {
 }
 ```
 
-**Color Palatte**
+#### **Color Palatte**
 
 TailwindCSS has a lot of nice colors you can work with. It is fully customizable, which means you can add your preferred color and use it in your project. In the theme configuration, you can specify your preferred color
 
@@ -109,7 +109,7 @@ module.exports = {
 }
 ```
 
-**Adding your own plugin**
+#### **Adding your own plugin**
 
 You can create your own custom plugin and add to you `tailwind.config.js`
 
