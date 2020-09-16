@@ -220,7 +220,7 @@ Route::group([ 'prefix' => 'v1/auth'], function (){
 
 #### **Step 7: Create API Responser**
 
-We are going to create our API responser by creating a `Traits` folder in our `App` folder, so our path looks like this `App\Traits`
+We are going to create our API responser by creating a `Traits` folder in our `App` folder, so our path looks like this `App\Traits\ApiResponser`
 
 ```php
 <?php
