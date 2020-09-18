@@ -162,4 +162,4 @@ module.exports = {
 }
 ```
 
-You can pull in [TailwindCSS ](https://tailwindcss.com/docs/installation "Tailwind Docs")from the official website and follow the installation guide.
+You can pull in [TailwindCSS](https://tailwindcss.com/docs/installation "Tailwind Docs") from the official website and follow the installation guide.
