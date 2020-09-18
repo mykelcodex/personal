@@ -27,7 +27,7 @@ I began a search for a new framework that will solve the above issues, then I ca
 
 Tailwind comes with a lot of predefined class that allows you to build up responsive components in a jiffy. These design classes are majorly the beauty of tailwind.
 
-Every Tailwind utility also comes with responsive variants, making it extremely easy to build responsive interfaces without resorting to custom CSS. 
+Every Tailwind utility also comes with responsive variants, making it extremely easy to build responsive interfaces without resorting to custom CSS.
 
 Tailwind comes with this default breakpoint
 
@@ -55,14 +55,14 @@ Below is a card component of fewer than 10 lines.
 
 ```html
 <div class="md:flex bg-white rounded-lg p-6">
-2    <img class="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6" src="avatar.jpg">
-3    <div class="text-center md:text-left">
-4      <h2 class="text-lg">Oke Michael</h2>
-5      <div class="text-purple-500">Software Engineer</div>
-6      <div class="text-gray-600">okesm@yahoo.com</div>
-7      <div class="text-gray-600">(234) 81-6869-6515</div>
-8    </div>
-9  </div>
+    <img class="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6" src="avatar.jpg">
+    <div class="text-center md:text-left">
+      <h2 class="text-lg">Oke Michael</h2>
+      <div class="text-purple-500">Software Engineer</div>
+      <div class="text-gray-600">okesm@yahoo.com</div>
+      <div class="text-gray-600">(234) 81-6869-6515</div>
+    </div>
+  </div>
 ```
 
 #### **Component-friendly**
