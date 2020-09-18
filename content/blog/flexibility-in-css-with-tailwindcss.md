@@ -69,6 +69,8 @@ Below is a card component of fewer than 10 lines.
 
 While you can do a _lot_ with just utility classes, as a project grows it can be useful to codify common patterns into higher-level abstractions.
 
+Tailwind provides tools for [**extracting component classes**](https://tailwindcss.com/docs/extracting-components) from repeated utility patterns, making it easy to update multiple instances of a component from one place.
+
 #### **Designed to be customized**
 
 If it makes sense to be customizable, Tailwind lets you customize it. This includes colors, border sizes, font weights, spacing utilities, breakpoints, shadows, and tons more.
