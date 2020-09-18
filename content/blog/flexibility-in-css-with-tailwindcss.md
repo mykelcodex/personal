@@ -5,7 +5,7 @@ description: A utility-first CSS framework for rapidly building custom designs.
 ---
 Not until today, BootstrapCSS is the most used CSS Framework. It provides some already made widgets like cards, badges, buttons, tables, breadcrumb, carousel, modal, nav, navbar, pagination, popover, spinners, etc. This made it a lot easier for a backend guy to do some frontend and still be comfortable.
 
-I have been a front-end developer for 4 years now, and [Bootstrap CSS](https://get.bootstrap.com "BootstrapCSS")  and has been my major CSS framework, I loved it because of rapid development in my projects but there were certain concerns that I have with it.
+I have been a front-end developer for 4 years now, and [Bootstrap CSS](https://getbootstrap.com "BootstrapCSS")  and has been my major CSS framework, I loved it because of rapid development in my projects but there were certain concerns that I have with it.
 
 #### **Imposes Design**
 
@@ -13,17 +13,19 @@ Bootstrap widgets come with default color and a style of design, customizing it 
 
 #### **Design Style**
 
-Changing the bootstrap design style takes a lot of time and effort.  About 50% of the website using bootstrap was known because of the design style because building a custom design in bootstrap is tedious.
+Changing the bootstrap design style takes a lot of time and effort.  About 50% of the website using bootstrap was known because of the design style and building a custom design in bootstrap is tedious.
 
 #### **Color Palette**
 
-Bootstrap does not provide much support for its color palette as the only colors provided are just ten.
+Bootstrap does not provide much support for its color palette and sometimes when i never some primary colors i need to add it to my project. I actually needed something that could provide me some start-pack color palette out of the box.
 
 I began a search for a new framework that will solve the above issues, then I came across [TailwindCSS](https://tailwindcss.com/ "Tailwindcss") and I was blown &#128562 at what it has to offer. If you're looking for a framework that comes with a menu of predesigned widgets to build your site with, Tailwind might not be the right framework for you. But if you want a huge head start implementing a custom design with its own identity, Tailwind might be just what you're looking for. Below are the reasons why you should use [TailwindCSS](https://tailwindcss.com "Tailwindcss") for your next project.
 
 ![](https://dotdev.co/wp-content/uploads/2019/06/stateofcss2019.png)
 
 #### **Utility first - Responsive to the core**
+
+Tailwind comes with a lot of predefined class that allows you to build up responsive components in a jiffy. These design classes are majorly the beauty of tailwind.
 
 Every Tailwind utility also comes with responsive variants, making it extremely easy to build responsive interfaces without resorting to custom CSS.
 
