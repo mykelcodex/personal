@@ -12,6 +12,15 @@ fields:
   config:
     required: false
   label: Description
+- name: createdat
+  type: datetime
+  description: Published date
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  label: createdAt
 pages:
 - content/blog/flexibility-in-css-with-tailwindcss.md
 - content/blog/how-to-build-a-rest-api-in-laravel.md
