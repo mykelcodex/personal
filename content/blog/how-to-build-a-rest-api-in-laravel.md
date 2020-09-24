@@ -5,7 +5,7 @@ description: Let us build a REST API using Laravel and a package called passport
 ---
 ### **What is an API?**
 
-An server-side web **API** is a programmatic interface consisting of one or more publicly exposed endpoints to define a request. The response message usually returns a JSON or XML format.
+A server-side web **API** is a programmatic interface consisting of one or more publicly exposed endpoints to define a request. The response message usually returns a JSON or XML format.
 
 A web API has the following characteristics :
 
