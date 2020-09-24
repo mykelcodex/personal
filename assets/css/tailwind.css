@@ -146,7 +146,7 @@
     @apply bg-purple-dark;
   }
   .markdown pre{
-    @apply py-5;
+    @apply py-2;
     @apply shadow;
     @apply rounded-md;
     @apply overflow-hidden;
@@ -170,6 +170,6 @@
   .markdown p{
     color: #e2e8f0;
     @apply text-lg;
-    @apply py-4;
+    @apply py-2;
     @apply leading-relaxed;
   }

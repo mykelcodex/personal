@@ -39,10 +39,9 @@
 <script>
 export default {
   async asyncData ({ $content,params }) {
-    const posts = await $content('blog').sortBy('createdAt').fetch()
+    const posts = await $content('blog').sortBy('createdAt','desc').fetch()
     const [prev, next] = await $content('blog')
       .only(['title', 'slug','createdAt','description'])
-      .sortBy('createdAt', 'asc')
       .surround(params.slug)
       .fetch()
     return { posts,prev, next }
