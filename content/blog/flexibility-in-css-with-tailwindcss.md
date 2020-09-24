@@ -17,7 +17,7 @@ Changing the bootstrap design style takes a lot of time and effort.  About 50% o
 
 #### **Color Palette**
 
-Bootstrap does not provide much support for its color palette and sometimes when i never some primary colors i need to add it to my project. I actually needed something that could provide me some start-pack color palette out of the box.
+Bootstrap does not provide much support for its color palette and sometimes when I need some primary colors, I need to add it to my project. I actually needed something that could provide me with some starter-pack color palette out of the box.
 
 I began a search for a new framework that will solve the above issues, then I came across [TailwindCSS](https://tailwindcss.com/ "Tailwindcss") and I was blown &#128562 at what it has to offer. If you're looking for a framework that comes with a menu of predesigned widgets to build your site with, Tailwind might not be the right framework for you. But if you want a huge head start implementing a custom design with its own identity, Tailwind might be just what you're looking for. Below are the reasons why you should use [TailwindCSS](https://tailwindcss.com "Tailwindcss") for your next project.
 
