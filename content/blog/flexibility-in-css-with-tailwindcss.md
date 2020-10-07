@@ -5,12 +5,7 @@ createdat: 2020-09-22T00:00:00.000+01:00
 
 ---
 Not until today, BootstrapCSS was the most used CSS Framework. It provides some already made widgets like cards, badges, buttons, tables, breadcrumb, carousel, modal, nav, navbar, pagination, popover, spinners, etc. This made it a lot easier for a backend guy to do some frontend and still be comfortable.
-<p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="moaj" data-slug-hash="gEbNzP" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Card Loader">
-  <span>See the Pen <a href="https://codepen.io/moaj/pen/gEbNzP">
-  Card Loader</a> by moaj (<a href="https://codepen.io/moaj">@moaj</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 I have been a front-end developer for 4 years now, and [Bootstrap CSS](https://getbootstrap.com "BootstrapCSS")  was my major CSS framework. I loved it because of its rapid development in my projects but there were certain concerns that I have with it.
 
 #### **Imposes Design**
