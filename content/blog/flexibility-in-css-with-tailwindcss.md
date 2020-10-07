@@ -56,17 +56,12 @@ See breakpoint implementation
 
 Below is a card component of fewer than 10 lines.
 
-```html
-<div class="md:flex bg-white rounded-lg p-6">
-    <img class="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6" src="avatar.jpg">
-    <div class="text-center md:text-left">
-      <h2 class="text-lg">Oke Michael</h2>
-      <div class="text-purple-500">Software Engineer</div>
-      <div class="text-gray-600">okesm@yahoo.com</div>
-      <div class="text-gray-600">(234) 81-6869-6515</div>
-    </div>
-  </div>
-```
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="mykelcodex" data-slug-hash="QWEWbRY" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 5em 0; padding: 1em;" data-pen-title="Card">
+  <span>See the Pen <a href="https://codepen.io/mykelcodex/pen/QWEWbRY">
+  Card</a> by Oke Michael  (<a href="https://codepen.io/mykelcodex">@mykelcodex</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 #### **Component-friendly**
 
