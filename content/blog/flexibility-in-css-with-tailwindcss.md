@@ -28,7 +28,7 @@ Below are the reasons why you should use [TailwindCSS](https://tailwindcss.com "
 
 #### **Utility first - Responsive to the core**
 
-Tailwind comes with a lot of predefined class that allows you to build up responsive components in a jiffy. These design classes are majorly the beauty of tailwind.
+Tailwind comes with a lot of predefined classes that allow you to build up responsive components in a jiffy. These predefined classes are majorly the beauty of tailwind.
 
 Every Tailwind utility also comes with responsive variants, making it extremely easy to build responsive interfaces without resorting to custom CSS.
 
@@ -70,13 +70,13 @@ Below is a card component of fewer than 10 lines.
 
 #### **Component-friendly**
 
-While you can do a _lot_ with just utility classes, as a project grows it can be useful to codify common patterns into higher-level abstractions.
-
 Tailwind provides tools for [**extracting component classes**](https://tailwindcss.com/docs/extracting-components) from repeated utility patterns, making it easy to update multiple instances of a component from one place.
+
+While you can do a _lot_ with just utility classes, as a project grows it can be useful to codify common patterns into higher-level abstractions.
 
 #### **Designed to be customized**
 
-If it makes sense to be customizable, Tailwind lets you customize it. This includes colors, border sizes, font weights, spacing utilities, breakpoints, shadows, and tons more.
+Tailwind gives you the freedom to customize anything without breaking you eg border, width, shadow, bg-color etc
 
 Tailwind is written in [**PostCSS**](http://postcss.org/) and configured in JavaScript, which means you have the full power of a real programming language at your fingertips.
 
