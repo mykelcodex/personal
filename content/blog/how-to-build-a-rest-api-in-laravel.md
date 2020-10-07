@@ -365,4 +365,4 @@ class AuthController extends Controller
 
 You can go ahead and test the API using [Insomnia](https://insomnia.rest/ "insomnia") which is my favourite API Client or [Postman](https://www.postman.com/ "Postman") based on your preference.
 
-You can leave a comment below if you have any issue testing the API.
+You can leave a comment below if you have any issues testing the API.
