@@ -6,7 +6,7 @@ createdat: 2020-09-22T00:00:00.000+01:00
 ---
 Not until today, BootstrapCSS was the most used CSS Framework. It provides some already made widgets like cards, badges, buttons, tables, breadcrumb, carousel, modal, nav, navbar, pagination, popover, spinners, etc. This made it a lot easier for a backend guy to do some frontend and still be comfortable.
 
-I have been a front-end developer for 4 years now, and [Bootstrap CSS](https://getbootstrap.com "BootstrapCSS")  was my major CSS framework, I loved it because of rapid development in my projects but there were certain concerns that I have with it.
+I have been a front-end developer for 4 years now, and [Bootstrap CSS](https://getbootstrap.com "BootstrapCSS")  was my major CSS framework. I loved it because of rapid development in my projects but there were certain concerns that I have with it.
 
 #### **Imposes Design**
 
