@@ -356,7 +356,7 @@ class AuthController extends Controller
             return $this->successResponse($user);
         }
         else{
-            $error = "user not found";
+            $error = "User not found";
             return $this->errorResponse($error, 401);
         }
     }
