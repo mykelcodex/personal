@@ -56,7 +56,7 @@ See breakpoint implementation
 
 Below is a card component of fewer than 10 lines.
 
-<p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-user="mykelcodex" data-slug-hash="QWEWbRY" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 10em 0; padding: 1em;" data-pen-title="Card">
+<p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-user="mykelcodex" data-slug-hash="QWEWbRY" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 10em 0; padding: 1em;" data-pen-title="Card">
   <span>See the Pen <a href="https://codepen.io/mykelcodex/pen/QWEWbRY">
   Card</a> by Oke Michael  (<a href="https://codepen.io/mykelcodex">@mykelcodex</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
