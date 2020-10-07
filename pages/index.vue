@@ -87,7 +87,7 @@
                   <h2 class="text-white font-bold text-xl xl:text-2xl">CareClick</h2>
                   <p class="text-light-purple mt-2 xl:mt-4">
                     CareClick is a telemedicine app that allows providers to have seamless consultation via video, chat and audio
-                    with patient from the comfort of thier home and offices.
+                    with patient from the comfort of their home and offices.
                   </p>
                 </div>
               </div>
@@ -118,7 +118,7 @@
                 <div class="px-4 py-4 lg:py-0 lg:px-0">
                   <h2 class="text-white font-bold text-xl xl:text-2xl">Agribusiness Capital</h2>
                   <p class="text-light-purple mt-2 xl:mt-4">
-                    Agribusiness Capital is a funding company that invest in entreprenuer that are into agriculture, investors too can give their quota into the program.
+                    Agribusiness Capital is a funding company that invest in entrepreneurs that are into agriculture, investors too can give their quota into the program.
                   </p>
                 </div>
               </div>
@@ -133,7 +133,7 @@
                 <div class="px-4 py-4 lg:py-0 lg:px-0">
                   <h2 class="text-white font-bold text-xl xl:text-2xl">International Percussion Federation</h2>
                   <p class="text-light-purple mt-2 xl:mt-4">
-                    IPF is an online drumming competion which allows participant from all over the world to upload 
+                    IPF is an online drumming competition web app that allows participant from all over the world to upload 
                     a short video based on thier category and country. Adjudicators are available from all over the world as well to
                     score each participant/participants video based on their performance.
                   </p>
