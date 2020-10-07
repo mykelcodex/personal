@@ -1,7 +1,7 @@
 ---
 title: How to build a REST API in Laravel
 description: Let us build a REST API using Laravel and a package called passport
-createdat: 2020-07-29T00:00:00+01:00
+createdat: 2020-07-29T00:00:00.000+01:00
 
 ---
 ### **What is an API?**
@@ -313,7 +313,7 @@ class AuthController extends Controller
     //login
     public function login(Request $request)
     {
-        $validator = Validator::make($request->all(), [
+        $v = Validator::make($request->all(), [
             'email' => 'required|string|email',
             'password' => 'required'
         ]);
