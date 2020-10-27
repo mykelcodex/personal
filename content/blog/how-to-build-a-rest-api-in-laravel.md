@@ -1,7 +1,7 @@
 ---
 title: How to build a REST API in Laravel
 description: Let us build a REST API using Laravel and a package called passport
-createdat: 2020-07-29T00:00:00+01:00
+createdat: 2020-07-29T00:00:00.000+01:00
 
 ---
 ### **What is an API?**
@@ -31,7 +31,7 @@ A web API has the following characteristics :
 
 * APIs are stateless, which means no client context stored between request(no session). API uses **token** as a means of authorization.
 
-Laravel uses Laravel Passport, which provides a full OAuth2 implementation.
+Laravel uses Laravel Passport, which provides a full [OAuth2](https://oauth.net/2/ "OAuth2") implementation.
 
 #### **Step 1: Install Laravel using composer, a php package manager**
 
@@ -313,7 +313,7 @@ class AuthController extends Controller
     //login
     public function login(Request $request)
     {
-        $validator = Validator::make($request->all(), [
+        $v = Validator::make($request->all(), [
             'email' => 'required|string|email',
             'password' => 'required'
         ]);
@@ -356,7 +356,7 @@ class AuthController extends Controller
             return $this->successResponse($user);
         }
         else{
-            $error = "user not found";
+            $error = "User not found";
             return $this->errorResponse($error, 401);
         }
     }
@@ -365,4 +365,4 @@ class AuthController extends Controller
 
 You can go ahead and test the API using [Insomnia](https://insomnia.rest/ "insomnia") which is my favourite API Client or [Postman](https://www.postman.com/ "Postman") based on your preference.
 
-You can leave a comment below if you have issues testing the API.
+You can leave a comment below if you have any issues testing the API.
