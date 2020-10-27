@@ -38,8 +38,6 @@
       .sortBy('createdAt', 'asc')
       .only(['title', 'path', 'createdAt'])
       .surround(post.slug).fetch()
-          console.log(post)
-
     return { post, surround }
   },
   head(){
