@@ -12,7 +12,7 @@ fields:
   config:
     required: false
   label: Description
-- name: createdat
+- name: createdAt
   type: datetime
   description: Published date
   config:
