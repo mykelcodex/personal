@@ -26,7 +26,7 @@
       <div class="mt-20 md:mt-24">
         <div class="text-white">
           <h2 class="text-4xl font-bold">Skillset </h2>
-          <div class="border-2 border-yellow w-12"></div>
+          <div class="border-2 border-yellow w-12"> </div>
         </div>  
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 md:mt-10">
           <div class="rounded-lg border hover:border-red transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
