@@ -26,7 +26,7 @@ let first = food[0]
 
 ### Methods of an array
 
-#### push
+#### **push**
 
 The `push()` method add a new item to an array.
 
@@ -36,7 +36,7 @@ console.log(updatedFood)
 // ['Rice','Bread','Meat','Beans']
 ```
 
-#### pop
+#### **pop**
 
 The `pop()` method remove an item from an array
 
@@ -56,7 +56,7 @@ console.log(checkFood)
 // true
 ```
 
-#### indexOf
+#### **indexOf**
 
 The `indexOf()` method search for an item in the array and returns the position is found else it returns -1
 
@@ -64,4 +64,20 @@ The `indexOf()` method search for an item in the array and returns the position 
 let foodPosition = food.indexOf('Rice')
 console.log(foodPosition)
 // 0
+```
+
+#### **map**
+
+The `map()` method returns a new array with a result of calling a function on every item of the array
+
+```js
+let numbers = ['1','2','3']
+
+function addToNumber(num){
+	return num + 2;
+}
+
+let newArray = numbers.map(addToNumber)
+console.log(newArray)
+// ['2','4','6']
 ```
