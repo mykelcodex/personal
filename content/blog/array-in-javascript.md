@@ -20,6 +20,6 @@ We can retrieve an item from an array by specifying the index.
 
 ```js
 let first = food[0]
-console.log(first)
-// Rice
+ console.log(first)
+ // Rice
 ```
