@@ -23,3 +23,25 @@ let first = food[0]
  console.log(first)
  // Rice
 ```
+
+### Methods of an array
+
+#### push()
+
+The `push()` method add a new item to an array.
+
+```js
+let updatedFood = food.push('Beans')
+console.log(updatedFood)
+//['Rice','Bread','Meat','Beans']
+```
+
+#### pop()
+
+The `pop()` method remove an item from an array
+
+```js
+let updatedFood = food.pop()
+console.log(updatedFood)
+//['Rice','Bread']
+```
