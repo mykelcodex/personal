@@ -46,7 +46,7 @@ console.log(updatedFood)
 // ['Rice','Bread']
 ```
 
-#### includes
+#### **includes**
 
 The `includes()`method checks if an item is in the array(usually return a boolean value)
 
