@@ -22,5 +22,6 @@ fields:
     display_utc: false
   label: createdAt
 pages:
+- content/blog/array-in-javascript.md
 - content/blog/flexibility-in-css-with-tailwindcss.md
 - content/blog/how-to-build-a-rest-api-in-laravel.md
