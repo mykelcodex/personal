@@ -81,3 +81,13 @@ let newArray = numbers.map(addToNumber)
 console.log(newArray)
 // ['2','4','6']
 ```
+
+#### **slice**
+
+The `slice()` method extracts items from an array based on passed in argument or else it will copy the array. This method can take two arguments, the first argument is the starting position of the item you want to extract while the second argument is the ending position. It returns a new array with of result with the passed in argument and the arguments.
+
+```js
+let extractedFood = food.slice(1,2)
+console.log(extractedFood)
+// ['Beans','Meat']
+```
