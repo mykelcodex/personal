@@ -26,7 +26,7 @@ let first = food[0]
 
 ### Methods of an array
 
-#### push()
+#### push
 
 The `push()` method add a new item to an array.
 
@@ -36,7 +36,7 @@ console.log(updatedFood)
 //['Rice','Bread','Meat','Beans']
 ```
 
-#### pop()
+#### pop
 
 The `pop()` method remove an item from an array
 
@@ -44,4 +44,24 @@ The `pop()` method remove an item from an array
 let updatedFood = food.pop()
 console.log(updatedFood)
 //['Rice','Bread']
+```
+
+#### includes
+
+The `includes()`method checks if an item is in the array(usually return a boolean value)
+
+```js
+let checkFood = food.includes('Bread')
+console.log(checkFood)
+//true
+```
+
+#### indexOf
+
+The `indexOf()` method search for an item in the array and returns the position is found else it returns -1
+
+```js
+let foodPosition = food.indexOf('Rice')
+console.log(foodPosition)
+// 0
 ```
