@@ -84,10 +84,34 @@ console.log(newArray)
 
 #### **slice**
 
-The `slice()` method extracts items from an array based on passed in argument or else it will copy the array. This method can take two arguments, the first argument is the starting position of the item you want to extract while the second argument is the ending position. It returns a new array with of result with the passed in argument and the arguments.
+The `slice()` method extracts items from an array based on passed in arguments or else it will copy the array. This method can take two arguments, the first argument is the starting position of the item you want to extract while the second argument is the ending position. It returns a new array with of result with the passed in argument and the arguments.
 
 ```js
 let extractedFood = food.slice(1,2)
 console.log(extractedFood)
 // ['Beans','Meat']
 ```
+
+#### **filter**
+
+The `filter()` method returns a new array containing all items of the calling array for which the provided filtering function returns `true`.
+
+```js
+let result = food.filter(word => word.length > 4);
+console.log(result);
+// ["Bread", "Meat"]
+```
+
+#### **toString**
+
+The `toString()` method converts an array to a sting
+
+```js
+let foodString = food.toString()
+console.log(foodString)
+// Rice,Bread,Meat
+```
+
+Above are some methods of an array in Javascript.
+
+Thanks
