@@ -1,5 +1,5 @@
 ---
-title: Array in JavaScript
+title: Arrays in JavaScript
 description: An array is a collection of items that consist of the same datatype
 createdAt: 2020-11-09T00:00:00+01:00
 
@@ -122,6 +122,6 @@ console.log(sortedFood)
 // ['Bread','Meat','Rice']
 ```
 
-Above are some methods of an array in JavaScript.
+Hope it helped.
 
 Thanks
