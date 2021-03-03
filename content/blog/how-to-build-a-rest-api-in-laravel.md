@@ -2,7 +2,7 @@
 title: How to build a REST API in Laravel
 description: Let us build a REST API using Laravel and a package called passport
 createdat: '2020-07-29T00:00:00.000+01:00'
-createdAt: 2020-07-29T00:00:00+01:00
+createdAt: 2020-07-29T00:00:00.000+01:00
 
 ---
 ### **What is an API?**
@@ -323,14 +323,20 @@ class AuthController extends Controller
             return $this->errorResponse($v->errors(), 422);       
         }
 
-        $credentials = request(['email', 'password']);
-        if(!Auth::attempt($credentials)){
-            $error = "Invalid Credentials";
-            return $this->errorResponse($error, 401);
+        //Get User
+    	$user = User::where('email', $request->email)->first();
+
+	    if (!$user) {
+			return $this->errorResponse('Invalid Credentials', 401);
+		}
+        
+        if (Hash::check($request->password, $user->password)) {
+            $success['token'] =  $user->createToken('token')->accessToken;
+        }else{
+       		return $this->errorResponse('Invalid Credentials', 401);
         }
-        $user = $request->user();
-        $success['token'] =  $user->createToken('token')->accessToken;
-        return $this->successResponse($success);
+    
+        return $this->successResponse([$success,$user]);
     }
 
     //logout
