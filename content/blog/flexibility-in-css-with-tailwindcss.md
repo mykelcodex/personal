@@ -2,7 +2,7 @@
 title: Flexibility in CSS with TailwindCSS
 description: A utility-first CSS framework for rapidly building custom designs.
 createdat: '2020-09-22T00:00:00.000+01:00'
-createdAt: 2020-09-24T00:00:00+01:00
+createdAt: 2020-09-24T00:00:00.000+01:00
 
 ---
 Not until today, BootstrapCSS was the most used CSS Framework. It provides some already made widgets like cards, badges, buttons, tables, breadcrumb, carousel, modal, nav, navbar, pagination, popover, spinners, etc. This made it a lot easier for a backend guy to do some frontend and still be comfortable.
@@ -11,7 +11,7 @@ I have been a front-end developer for 4 years now, and [Bootstrap CSS](https://g
 
 #### **Imposes Design**
 
-Bootstrap widgets come with some default colors and a style of design, customizing it to your own taste can be tiring.
+Bootstrap widgets comes with some default colors and a style of design, customizing it to your own taste can be tiring.
 
 #### **Design Style**
 
@@ -58,9 +58,9 @@ See breakpoint implementation
 Below is a card component of fewer than 10 lines.
 
 <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-user="mykelcodex" data-slug-hash="QWEWbRY" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 10em 0; padding: 1em;" data-pen-title="Card">
-  <span>See the Pen <a href="https://codepen.io/mykelcodex/pen/QWEWbRY">
-  Card</a> by Oke Michael  (<a href="https://codepen.io/mykelcodex">@mykelcodex</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
+<span>See the Pen <a href="https://codepen.io/mykelcodex/pen/QWEWbRY">
+Card</a> by Oke Michael  (<a href="https://codepen.io/mykelcodex">@mykelcodex</a>)
+on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
