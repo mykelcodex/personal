@@ -8,12 +8,12 @@
             <p class="text-yellow font-light text-focus-in">Software Engineer &middot; Entreprenuer &middot; Freelancer </p>
           </div>
           <div class="mt-8 lg:mt-10">
-            <p class="text-lg leading-relaxed text-light-purple font-light text-center lg:text-left">
+            <p class="text-sm sm:text-lg leading-relaxed text-light-purple font-light text-center lg:text-left">
               Hello! My name is Oke Michael, i am a software engineer based in Nigeria. I spend most of my time on the web which means i focus majorly on the web&#128540;. I am a huge fan of PHP and Javascript even after the release of PHP 7 which is super fast &#128525;. I have built a good number of
-              applications using PHP and Javascript. These days, i focus on building web interfaces, APIs and microservices with <a target="_blank" href="https://laravel.com" class="link underline">Laravel</a>, <a target="_blank" href="https://lumen.laravel.com/" class="link underline">Lumen</a>, <a target="_blank" href="https://vuejs.org" class="link underline">Vue.js</a> and <a target="_blank" href="https://tailwindcss.com" class="link underline">TailwindCSS</a>.
-              I love to contribute to the open source community. I also get my hands typing with tools like <a target="_blank" href="https://nuxtjs.org/" class="link underline">Nuxt.js</a>, <a target="_blank" href="https://inertiajs.com/" class="link underline">Inertia.js</a> and <a target="_blank" href="https://github.com/alpinejs/alpine" class="link underline">Apline.js</a> based on the project and client's requirement.
+              applications using PHP and Javascript. I love event driven applications and technologies like <a target="_blank" href="https://www.rabbitmq.com/" class="link underline">Rabbit MQ</a>, <a target="_blank" href="https://kafka.apache.org/" class="link underline">Kafka</a>, <a target="_blank" href="https://redis.io/" class="link underline">Redis</a> and <a target="_blank" href="https://www.docker.com" class="link underline">Docker</a>.  These days, i focus on building web interfaces, APIs and microservices with <a target="_blank" href="https://laravel.com" class="link underline">Laravel</a>, <a target="_blank" href="https://lumen.laravel.com/" class="link underline">Lumen</a>, <a target="_blank" href="https://vuejs.org" class="link underline">Vue.js</a> and <a target="_blank" href="https://tailwindcss.com" class="link underline">TailwindCSS</a>.
+              I love to contribute to the open source community. I also get my hands typing with tools like <a target="_blank" href="https://nuxtjs.org/" class="link underline">Nuxt.js</a>, <a target="_blank" href="https://inertiajs.com/" class="link underline">Inertia.js</a> and <a target="_blank" href="https://github.com/alpinejs/alpine" class="link underline">Apline.js</a> based on the project and the client's requirement.
             </p>
-            <p class="mt-2 text-lg leading-relaxed text-light-purple font-light text-center lg:text-left">
+            <p class="mt-2 text-sm sm:text-lg leading-relaxed text-light-purple font-light text-center lg:text-left">
               Mentors: <a href="htts://twitter.com/taylorotwell" target="_blank" class="link underline">Taylor Otwell</a>, <a href="https://twitter.com/youyuxi" target="_blank" class="link underline">Evan You</a>, <a href="https://twitter.com/adamwathan" target="_blank" class="link underline">Adam Wathan</a>, <a href="https://twitter/jeffrey_way" target="_blank" class="link underline">Jeffrey Way</a>, <a href="https://twitter.com/reinink" target="_blank" class="link underline">Jonathan Reinink</a>.
             </p>
           </div>
@@ -23,9 +23,9 @@
           <img src="images/mykelcodex.jpg" class="text-focus-in block lg:hidden rounded-lg w-56 sm:w-64 mx-auto lg:mx-0 lg:w-full shadow-xl" alt="Oke Michael" style="radial-gradient(#ccc8c6 40%, #818177)">
         </div>
       </div>
-      <div class="mt-20 md:mt-24">
+      <!-- <div class="mt-10 sm:mt-20 md:mt-24">
         <div class="text-white">
-          <h2 class="text-4xl font-bold">Skillset </h2>
+          <h2 class="text-2xl md:text-4xl font-bold">Skillset</h2>
           <div class="border-2 border-yellow w-12"></div>
         </div>  
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 md:mt-10">
@@ -39,7 +39,7 @@
               </div>
             </div>
           </div>
-          <div class="rounded-lg border hover:border-green  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+          <div class="rounded-lg border hover:border-green transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
             <div class="bg-purple-dark p-4 rounded-lg shadow-lg">
               <div class="bg-purple-darker mx-auto rounded-full w-24 h-24 p-5">
                 <img src="images/framework/vuejs.svg" class="mx-auto mt-2" alt="vuejs">
@@ -70,24 +70,26 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="mt-20 md:mt-24">
+      </div> -->
+      <div class="mt-10 sm:mt-20 md:mt-24">
         <div class="text-white">
-          <h2 class="text-4xl font-bold">Projects</h2>
+          <h2 class="text-2xl md:text-4xl font-bold">Projects</h2>
           <div class="border-2 border-yellow w-12"></div>
         </div>
         <div class="grid grid-cols-1 gap-4 mt-8 md:mt-10">
           <div class="bg-purple-dark rounded-lg">
             <div class="flex flex-wrap justify-between">
               <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10  lg:pl-10 ">
-                <a href="https://careclick.healthcare"><img src="images/careclick1.jpg" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-t lg:rounded" alt="CareClick"></a>
+                <a href="https://careclick.healthcare" target="_blank"><img src="images/careclick1.jpg" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-t lg:rounded" alt="CareClick"></a>
               </div>
               <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10 ">
                 <div class="px-4 py-4 lg:py-0 lg:px-0">
-                  <h2 class="text-white font-bold text-xl xl:text-2xl">CareClick</h2>
+                  <a href="http://careclick.healthcare" target="_blank">
+                    <h2 class="text-white font-bold text-xl xl:text-2xl hover:text-yellow transition duration-500 ease-in-out">CareClick</h2>
+                  </a>
                   <p class="text-light-purple mt-2 xl:mt-4">
                     CareClick is a telemedicine app that allows providers to have seamless consultation via video, chat and audio
-                    with patient from the comfort of their home and offices.
+                    with care receivers from the comfort of their home and offices.
                   </p>
                 </div>
               </div>
@@ -96,14 +98,15 @@
           <div class="bg-purple-dark rounded-lg">
             <div class="flex flex-wrap justify-between">
               <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10  lg:pl-10 ">
-                <a href="https://tradersfield.org"><img src="images/trader.jpg" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-t lg:rounded" alt="Tradersfield"></a>
+                <a href="https://mickety.com" target="_blank"><img src="images/mickety.png" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-t lg:rounded" alt="Tradersfield"></a>
               </div>
               <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10 ">
                 <div class="px-4 py-4 lg:py-0 lg:px-0">
-                  <h2 class="text-white font-bold text-xl xl:text-2xl">Tradersfield</h2>
+                  <a href="http://mickety.com" target="_blank">
+                    <h2 class="text-white font-bold text-xl xl:text-2xl hover:text-yellow transition duration-500 ease-in-out">Mickety</h2>
+                  </a>
                   <p class="text-light-purple mt-2 xl:mt-4">
-                    Tradersfield is an e-learning platform for cypto-traders. It allows crypto-trader to get latest update via the content uploads
-                    and an interactive session between traders.
+                    Mickety is a simple yet powerful event management platform designed for the culture. A community curated for you to search, create, and share the culture, your knowledge, ideas, music, food, and lifestyle with the world in person or virtually.
                   </p>
                 </div>
               </div>
@@ -112,30 +115,15 @@
           <div class="bg-purple-dark rounded-lg">
             <div class="flex flex-wrap justify-between">
               <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10  lg:pl-10 ">
-                <a href="http://agribusinesscapitalng.com/"><img src="images/agric.jpg" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-t lg:rounded" alt="Agribusiness Capital"></a>
+                <a href="http://starplug.me" target="_blank"><img src="images/starplug.png" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-t lg:rounded" alt="Agribusiness Capital"></a>
               </div>
               <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10 ">
                 <div class="px-4 py-4 lg:py-0 lg:px-0">
-                  <h2 class="text-white font-bold text-xl xl:text-2xl">Agribusiness Capital</h2>
+                  <a href="http://starplug.me" target="_blank">
+                    <h2 class="text-white font-bold text-xl xl:text-2xl hover:text-yellow transition duration-500 ease-in-out">Starplug</h2>
+                  </a>
                   <p class="text-light-purple mt-2 xl:mt-4">
-                    Agribusiness Capital is a funding company that invest in entrepreneurs that are into agriculture, investors too can give their quota into the program.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="bg-purple-dark rounded-lg">
-            <div class="flex flex-wrap justify-between">
-              <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10  lg:pl-10 ">
-                <a href="https://percussionfed.org/"><img src="images/ipf.jpg" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-t lg:rounded" alt="International Percussion Federation"></a>
-              </div>
-              <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10 ">
-                <div class="px-4 py-4 lg:py-0 lg:px-0">
-                  <h2 class="text-white font-bold text-xl xl:text-2xl">International Percussion Federation</h2>
-                  <p class="text-light-purple mt-2 xl:mt-4">
-                    IPF is an online drumming competition web app that allows participant from all over the world to upload 
-                    a short video based on thier category and country. Adjudicators are available from all over the world as well to
-                    score each participant/participants video based on their performance.
+                    Starplug is platform that allows you to request for a personalized video from you favorite celebrity. Think of any occasion, birthday, surprise visit, home welcoming etc
                   </p>
                 </div>
               </div>
@@ -145,25 +133,25 @@
       </div>  
     </div>
     <div>
-      <div class="flex flex-wrap justify-between mt-20 mb-20 md:mb-0">
+      <div class="flex flex-wrap justify-between mt-10 md:mt-20 mb-20 md:mb-0 xl:px-32">
         <div class="w-1/22 hidden md:block">
-          <img src="images/oke-michael2.jpg" class="w-full shadow-xl rounded-tr-lg" alt="">
+          <img src="images/oke-michael2.jpg" class="w-full shadow-xl rounded-tr-lg xl:rounded-tl-lg" alt="">
         </div>
         <div class="w-full md:w-1/22 px-6 sm:px-10 lg:px-0">
           <div class="lg:mt-10 xl:mt-20">
             <div class="text-white">
-              <h2 class="text-4xl font-bold">Contact</h2>
+              <h2 class="text-2xl md:text-4xl font-bold">Contact</h2>
               <div class="border-2 border-yellow w-12"></div>
             </div>
             <div class="text-white text-sm md:text-base">
-              <p class="mt-10 md:max-w-sm">Feel free to send me an email and let us discuss about your next project or get in touch via my socials</p>
+              <p class="mt-5 md:max-w-sm">Feel free to send me an email and let us discuss about your next project or get in touch via my socials</p>
               <div class="mt-5">
-                <div class="flex justify-between">
-                    <div class="w-1/22 block md:hidden">
+                <div class="flex flex-col sm:flex-row justify-between">
+                    <div class="w-full sm:w-1/22 block md:hidden">
                       <img src="images/oke-michael2.jpg" class="w-full shadow-xl rounded-lg" alt="">
                     </div>
-                    <div class="w-1/22 md:w-full mt-2 sm:mt-4 md:mt-0">
-                      <div class="bg-purple-dark p-2 lg:p-4 rounded-lg shadow-xl max-w-sm">
+                    <div class="w-full sm:w-1/22 md:w-full mt-4 md:mt-0">
+                      <div class="bg-purple-dark p-2 lg:p-4 rounded-lg shadow-xl w-full sm:max-w-sm">
                         <div class="flex items-center">
                           <div>
                             <p class="hidden md:block">Github:</p>
