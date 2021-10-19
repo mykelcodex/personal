@@ -123,7 +123,7 @@
                     <h2 class="text-white font-bold text-xl xl:text-2xl hover:text-yellow transition duration-500 ease-in-out">Starplug</h2>
                   </a>
                   <p class="text-light-purple mt-2 xl:mt-4">
-                    Starplug is platform that allows you to request for a personalized video from you favorite celebrity. Think of any occasion, birthday, surprise visit, home welcoming etc
+                    Starplug is a platform that allows you to request for a personalized video from you favorite celebrity. Think of any occasion, birthday, surprise visit, home welcoming etc
                   </p>
                 </div>
               </div>
