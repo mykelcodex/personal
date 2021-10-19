@@ -8,12 +8,12 @@
             <p class="text-yellow font-light text-focus-in">Software Engineer &middot; Entreprenuer &middot; Freelancer </p>
           </div>
           <div class="mt-8 lg:mt-10">
-            <p class="text-sm sm:text-lg leading-relaxed text-light-purple font-light text-center lg:text-left">
+            <p class="text-base sm:text-lg leading-relaxed text-light-purple font-light text-center lg:text-left">
               Hello! My name is Oke Michael, I am a software engineer based in Nigeria. I spend most of my time on the web which means I focus majorly on the web&#128540;. I am a huge fan of PHP and Javascript even after the release of PHP 7 which is super fast &#128525;. I have built a good number of
               applications using PHP and Javascript. I love event driven applications and technologies like <a target="_blank" href="https://www.rabbitmq.com/" class="link underline">Rabbit MQ</a>, <a target="_blank" href="https://kafka.apache.org/" class="link underline">Kafka</a>, <a target="_blank" href="https://redis.io/" class="link underline">Redis</a> and <a target="_blank" href="https://www.docker.com" class="link underline">Docker</a>.  These days, I focus more on building web interfaces, APIs and microservices with <a target="_blank" href="https://laravel.com" class="link underline">Laravel</a>, <a target="_blank" href="https://lumen.laravel.com/" class="link underline">Lumen</a>, <a target="_blank" href="https://vuejs.org" class="link underline">Vue.js</a> and <a target="_blank" href="https://tailwindcss.com" class="link underline">TailwindCSS</a>.
               I love to contribute to the open source community. I also get my hands typing with tools like <a target="_blank" href="https://nuxtjs.org/" class="link underline">Nuxt.js</a>, <a target="_blank" href="https://inertiajs.com/" class="link underline">Inertia.js</a> and <a target="_blank" href="https://github.com/alpinejs/alpine" class="link underline">Apline.js</a> based on the project and the client's requirement.
             </p>
-            <p class="mt-2 text-sm sm:text-lg leading-relaxed text-light-purple font-light text-center lg:text-left">
+            <p class="mt-2 text-base sm:text-lg leading-relaxed text-light-purple font-light text-center lg:text-left">
               Mentors: <a href="htts://twitter.com/taylorotwell" target="_blank" class="link underline">Taylor Otwell</a>, <a href="https://twitter.com/youyuxi" target="_blank" class="link underline">Evan You</a>, <a href="https://twitter.com/adamwathan" target="_blank" class="link underline">Adam Wathan</a>, <a href="https://twitter/jeffrey_way" target="_blank" class="link underline">Jeffrey Way</a>, <a href="https://twitter.com/reinink" target="_blank" class="link underline">Jonathan Reinink</a>.
             </p>
           </div>
