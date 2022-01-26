@@ -23,54 +23,7 @@
           <img src="images/mykelcodex.jpg" class="text-focus-in block lg:hidden rounded-lg w-56 sm:w-64 mx-auto lg:mx-0 lg:w-full shadow-xl" alt="Oke Michael" style="radial-gradient(#ccc8c6 40%, #818177)">
         </div>
       </div>
-      <!-- <div class="mt-10 sm:mt-20 md:mt-24">
-        <div class="text-white">
-          <h2 class="text-2xl md:text-4xl font-bold">Skillset</h2>
-          <div class="border-2 border-yellow w-12"></div>
-        </div>  
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 md:mt-10">
-          <div class="rounded-lg border hover:border-red transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
-            <div class="bg-purple-dark p-4 rounded-lg shadow-lg">
-              <div class="bg-purple-darker mx-auto rounded-full w-24 h-24 p-5">
-                <img src="images/framework/laravel.svg" class="mx-auto" alt="laravel">
-              </div>
-              <div class="text-center mt-3">
-                <h3 class="text-white text-2xl">Laravel</h3>
-              </div>
-            </div>
-          </div>
-          <div class="rounded-lg border hover:border-green transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
-            <div class="bg-purple-dark p-4 rounded-lg shadow-lg">
-              <div class="bg-purple-darker mx-auto rounded-full w-24 h-24 p-5">
-                <img src="images/framework/vuejs.svg" class="mx-auto mt-2" alt="vuejs">
-              </div>
-              <div class="text-center mt-3">
-                <h3 class="text-white text-2xl">VueJS</h3>
-              </div>
-            </div>
-          </div>
-          <div class="rounded-lg border hover:border-blue  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
-            <div class="bg-purple-dark p-4 rounded-lg shadow-lg">
-              <div class="bg-purple-darker mx-auto rounded-full w-24 h-24 p-5">
-                <img src="images/framework/tailwindcss.svg" class="mx-auto mt-3" alt="tailwindcss">
-              </div>
-              <div class="text-center mt-3">
-                <h3 class="text-white text-2xl">TailwindCSS</h3>
-              </div>
-            </div>
-          </div>
-          <div class="rounded-lg border hover:border-green-dark  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
-            <div class="bg-purple-dark p-4 rounded-lg shadow-lg">
-              <div class="bg-purple-darker mx-auto rounded-full w-24 h-24 p-5">
-                <img src="images/framework/nuxtjs.svg" class="mx-auto mt-1" alt="Nuxtjs">
-              </div>
-              <div class="text-center mt-3">
-                <h3 class="text-white text-2xl">NuxtJS</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
+      
       <div class="mt-10 sm:mt-20 md:mt-24">
         <div class="text-white">
           <h2 class="text-2xl md:text-4xl font-bold">Projects</h2>
@@ -80,16 +33,32 @@
           <div class="bg-purple-dark rounded-lg">
             <div class="flex flex-wrap justify-between">
               <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10  lg:pl-10 ">
-                <a href="https://careclick.healthcare" target="_blank"><img src="images/careclick1.jpg" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-t lg:rounded" alt="CareClick"></a>
+                <a href="http://starplug.me" target="_blank"><img src="/images/starplug.png" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-t lg:rounded" alt="Agribusiness Capital"></a>
               </div>
               <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10 ">
                 <div class="px-4 py-4 lg:py-0 lg:px-0">
-                  <a href="http://careclick.healthcare" target="_blank">
-                    <h2 class="text-white font-bold text-xl xl:text-2xl hover:text-yellow transition duration-500 ease-in-out">CareClick</h2>
+                  <a href="http://starplug.me" target="_blank">
+                    <h2 class="text-white font-bold text-xl xl:text-2xl hover:text-yellow transition duration-500 ease-in-out">Starplug</h2>
                   </a>
                   <p class="text-light-purple mt-2 xl:mt-4">
-                    CareClick is a telemedicine app that allows care-providers to have seamless consultation via video, chat and audio
-                    with care-receivers from the comfort of their home and offices.
+                    Starplug is a platform that allows you to request for a personalized video from you favorite starss or celebrities. Think of any occasion, birthday, surprise visit, home welcoming etc
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-purple-dark rounded-lg">
+            <div class="flex flex-wrap justify-between">
+              <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10  lg:pl-10 ">
+                <a href="https://joinclickapp.com" target="_blank"><img src="images/click.png" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-t lg:rounded" alt="CareClick"></a>
+              </div>
+              <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10 ">
+                <div class="px-4 py-4 lg:py-0 lg:px-0">
+                  <a href="http://joinclickapp.com" target="_blank">
+                    <h2 class="text-white font-bold text-xl xl:text-2xl hover:text-yellow transition duration-500 ease-in-out">Click</h2>
+                  </a>
+                  <p class="text-light-purple mt-2 xl:mt-4">
+                    Click makes it easier than it's ever been to connect highly qualified and passionate healthcare professionals with institutions and agencies that need them. The process is seamless, effective and efficient.
                   </p>
                 </div>
               </div>
@@ -115,15 +84,15 @@
           <div class="bg-purple-dark rounded-lg">
             <div class="flex flex-wrap justify-between">
               <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10  lg:pl-10 ">
-                <a href="http://starplug.me" target="_blank"><img src="images/starplug.png" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-t lg:rounded" alt="Agribusiness Capital"></a>
+                <a href="https://starksassociate.com" target="_blank"><img src="images/starks.png" class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100 rounded-t lg:rounded" alt="Tradersfield"></a>
               </div>
               <div class="w-full lg:w-1/2 lg:py-10 xl:pt-10 lg:pr-10 ">
                 <div class="px-4 py-4 lg:py-0 lg:px-0">
-                  <a href="http://starplug.me" target="_blank">
-                    <h2 class="text-white font-bold text-xl xl:text-2xl hover:text-yellow transition duration-500 ease-in-out">Starplug</h2>
+                  <a href="http://starksassociate.com" target="_blank">
+                    <h2 class="text-white font-bold text-xl xl:text-2xl hover:text-yellow transition duration-500 ease-in-out">Starks</h2>
                   </a>
                   <p class="text-light-purple mt-2 xl:mt-4">
-                    Starplug is a platform that allows you to request for a personalized video from you favorite celebrity. Think of any occasion, birthday, surprise visit, home welcoming etc
+                    Starks enables cross-border and multicurrency payments for corporates across Africa. With Starks, you can pay any African country in your local currency.
                   </p>
                 </div>
               </div>
