@@ -14,8 +14,7 @@
               I love to contribute to the open source community. I also get my hands typing with tools like <a target="_blank" href="https://nuxtjs.org/" class="link underline">Nuxt.js</a>, <a target="_blank" href="https://inertiajs.com/" class="link underline">Inertia.js</a> and <a target="_blank" href="https://github.com/alpinejs/alpine" class="link underline">Apline.js</a> based on the project and the client's requirement.
             </p>
             <p class="mt-2 text-base sm:text-lg leading-relaxed text-light-purple font-light text-center lg:text-left">
-              Mentors: 
-              <a href="htts://twitter.com/taylorotwell" target="_blank" class="link underline">Taylor Otwell</a>, <a href="https://twitter.com/youyuxi" target="_blank" class="link underline">Evan You</a>, <a href="https://twitter.com/adamwathan" target="_blank" class="link underline">Adam Wathan</a>, <a href="https://twitter/jeffrey_way" target="_blank" class="link underline">Jeffrey Way</a>, <a href="https://twitter.com/reinink" target="_blank" class="link underline">Jonathan Reinink</a>.
+              Mentors: <a href="htts://twitter.com/taylorotwell" target="_blank" class="link underline">Taylor Otwell</a>, <a href="https://twitter.com/youyuxi" target="_blank" class="link underline">Evan You</a>, <a href="https://twitter.com/adamwathan" target="_blank" class="link underline">Adam Wathan</a>, <a href="https://twitter/jeffrey_way" target="_blank" class="link underline">Jeffrey Way</a>, <a href="https://twitter.com/reinink" target="_blank" class="link underline">Jonathan Reinink</a>.
             </p>
           </div>
         </div>
@@ -42,7 +41,7 @@
                     <h2 class="text-white font-bold text-xl xl:text-2xl hover:text-yellow transition duration-500 ease-in-out">Starplug</h2>
                   </a>
                   <p class="text-light-purple mt-2 xl:mt-4">
-                    Starplug is a platform that allows you to request for a personalized video from you favorite starss or celebrities. Think of any occasion, birthday, surprise visit, home welcoming etc
+                    Starplug is a platform that allows you to request for a personalized video from you favorite stars or celebrities. Think of any occasion, birthday, surprise visit, home welcoming etc
                   </p>
                 </div>
               </div>
