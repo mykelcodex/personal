@@ -5,7 +5,7 @@
         <div class="w-full lg:w-1/22 order-last lg:order-none">
           <div class="text-white text-center lg:text-left">
             <h2 class="text-3xl lg:text-5xl font-semibold lg:font-bold mt-4 lg:mt-0 text-focus-in">Oke Michael</h2>
-            <p class="text-yellow font-light text-focus-in">Software Engineer &middot; Entreprenuer &middot; Freelancer </p>
+            <p class="text-yellow font-light text-focus-in">Software Engineer &middot; Entreprenuer &middot; Freelancer</p>
           </div>
           <div class="mt-8 lg:mt-10">
             <p class="text-base sm:text-lg leading-relaxed text-light-purple font-light text-center lg:text-left">
