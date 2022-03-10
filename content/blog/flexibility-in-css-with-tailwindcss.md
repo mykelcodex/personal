@@ -1,6 +1,9 @@
 ---
 title: Flexibility in CSS with TailwindCSS
-description: A utility-first CSS framework for rapidly building custom designs.
+description: Not until today, BootstrapCSS was the most used CSS Framework. It provides
+  some already made widgets like cards, badges, buttons, tables, breadcrumb, carousel,
+  modal, nav, navbar, pagination, popover, spinners, etc. This made it a lot easier
+  for a backend guy to do some frontend and still be comfortable.
 createdat: '2020-09-22T00:00:00.000+01:00'
 createdAt: 2020-09-24T00:00:00.000+01:00
 
