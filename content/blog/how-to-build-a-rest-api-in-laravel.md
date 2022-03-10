@@ -23,12 +23,12 @@ A web API has the following characteristics :
 * Centres on the transfer of presentations of resources
 * A client makes a request when it wants a change of state
 
-**STRENGTHS**
+#### **Strength?**
 
 * Leverages on the power of HTTP
 * Part by part or loose coupling
 
-**CONSTRAINT**
+#### **Constraints?**
 
 * APIs are stateless, which means no client context stored between request(no session). API uses **token** as a means of authorization.
 
