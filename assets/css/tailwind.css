@@ -76,27 +76,27 @@
   .markdown h1{
     @apply text-4xl;
     color: #e2e8f0;
-    @apply pb-2;
+    @apply mt-5 pb-2;
   }
   .markdown h2{
     @apply text-3xl;
     color: #e2e8f0;
-    @apply pb-2;
+    @apply mt-5 pb-2;
   }
   .markdown h3{
     @apply text-2xl;
     color: #e2e8f0;
-    @apply pb-2;
+    @apply mt-5 pb-2;
   }
   .markdown h4{
     @apply text-2xl;
     color: #e2e8f0;
-    @apply pb-2;
+    @apply mt-5 pb-2;
   }
   .markdown h5{
     @apply text-lg;
     color: #e2e8f0;
-    @apply pb-2;
+    @apply mt-5 pb-2;
   }
   .markdown ul, ol{
     list-style: none;
