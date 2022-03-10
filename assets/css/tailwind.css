@@ -102,6 +102,7 @@
     list-style: none;
     color: #e2e8f0;
     margin-left:20px;
+    @apply text-lg
   }
   .markdown {
     border-collapse: collapse;
@@ -145,11 +146,6 @@
     padding: 0.5em 10px;
     quotes: "\201C""\201D""\2018""\2019";
   }
-  .markdown code{
-    @apply px-2;
-    @apply rounded;
-    color: #e2e8f0;
-  }
   .filename{
     @apply italic;
     @apply text-yellow;
@@ -167,6 +163,8 @@
   .markdown pre code{
     @apply p-4;
     @apply text-sm;
+    color: #e2e8f0;
+    font-family:'JetBrains Mono';
   }
   .markdown blockquote:before{
     color: #ccc;

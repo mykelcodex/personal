@@ -2,7 +2,7 @@
   <div>
     <div class="mt-10 px-6 sm:px-10 lg:px-20 xl:px-32 min-h-screen">
       <div>
-        <div class="max-w-3xl mx-auto">
+        <div class="max-w-4xl mx-auto">
           <h2 class="text-2xl md:text-3xl lg:text-4xl text-white font-semibold">{{ post.title }}</h2>
           <div class="flex items-center mt-3 mb-6 lg:mb-5">
             <svg class="text-light-purple stroke-current" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
