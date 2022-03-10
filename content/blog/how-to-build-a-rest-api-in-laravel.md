@@ -1,6 +1,8 @@
 ---
 title: How to build a REST API in Laravel
-description: Let us build a REST API using Laravel and a package called passport
+description: A server-side web API is a programmatic interface consisting of one or
+  more publicly exposed endpoints to define a request. The response message usually
+  returns a JSON or XML format.
 createdat: '2020-07-29T00:00:00.000+01:00'
 createdAt: 2020-07-29T00:00:00.000+01:00
 
