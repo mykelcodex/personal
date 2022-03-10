@@ -8,11 +8,11 @@
         </div>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 mb-56">
-        <div class="bg-purple-dark rounded overflow-hidden shadow-xl flex" v-for="(post, index) in posts" :key="index">
+        <div class="bg-purple-dark rounded overflow-hidden shadow-xl flex " v-for="(post, index) in posts" :key="index">
           <div class="flex-1 flex flex-col justify-between">
             <div class="text-white mt-2 p-3">
               <nuxt-link :to="post.path"><h2 class="text-xl xl:text-2xl font-bold">{{ post.title }}</h2></nuxt-link>
-              <nuxt-link :to="post.path"><div class="mt-2 font-light text-light-purple">{{ post.description.substring(0, 150) + '...' }}</div></nuxt-link>
+              <nuxt-link :to="post.path"><div class="mt-2 font-light text-light-purple">{{ post.description.substring(0, 170) + '...' }}</div></nuxt-link>
             </div>
             <div class="flex items-center border-t border-yellow py-2 px-3">
               <svg class="text-light-purple stroke-current" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
