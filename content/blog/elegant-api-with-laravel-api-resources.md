@@ -144,7 +144,7 @@ This will return a new `User` object
 
 Not bad right? But it can be better, let's do it the **ELEGANT DESIGN PATTERN**
 
-Generate a new resource for your `User` model using `php artisan make:resource UserResource` . This will create a new folder for us in us in our `HTTP` directory.
+Generate a new resource for your `User` model using `php artisan make:resource UserResource` . This will create a new folder for us in our `HTTP` directory.
 
 `App\Http\Resources\UserResource`
 
