@@ -28,13 +28,15 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 The above code returns
 
-    {
-    	id:1,
-        name:"Michael Oke"
-        email:"okesm@yahoo.com",
-        created_at: "2022-03-31 02:45:56",
-        updated_at: "2022-03-31 02:45:56",
-    }
+```php
+{
+	id:1,
+    name:"Michael Oke"
+    email:"okesm@yahoo.com",
+    created_at: "2022-03-31 02:45:56",
+    updated_at: "2022-03-31 02:45:56",
+}
+```
 
 We want to transform the above API to satisfy the below condition:
 
