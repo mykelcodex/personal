@@ -42,3 +42,99 @@ We want to transform the above API to satisfy the below condition:
 * Transform `created_at` to human readable format
 * Split  `name` to `firstname` and `lastname`
 * Transform first letter of `firstname` and `lastname` to capital letter (accessor)
+
+In our `App\Models\User.php` , we are going to perform the modification.
+
+```php
+<?php
+
+namespace App\Models;
+
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
+
+class User extends Authenticatable
+{
+    use HasApiTokens, HasFactory, Notifiable;
+	
+    //Append it
+    
+    protected $appends = ['firstName','lastName'];
+    
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
+    ];
+
+    /**
+     * The attributes that should be hidden for serialization.
+     *
+     * @var array<int, string>
+     */
+    protected $hidden = [
+        'password',
+        'remember_token',
+        'updated_at'   //Remove updated_at
+        'name' //Remove name
+    ];
+
+	/**
+     * Create created_at attribute to transform date
+     *
+     * @var array<string, string>
+     */
+     public function getCreatedAtAttribute(){
+     	return $this->created_at->diffForHumans();
+     }
+     
+     
+     /**
+     * Create firstname and capitalize it
+     *
+     * @var array<string, string>
+     */
+     public function getFirstNameAttribute(){
+     	return ucfirst(explode('', $this->name)[0]);
+     }
+     
+     /**
+     * Create lastname and capitalize it
+     *
+     * @var array<string, string>
+     */
+     public function getLastNameAttribute(){
+     	return ucfirst(explode('', $this->name)[1]);
+     }
+     
+
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+    ];
+}
+```
+
+This will return a new `User` object
+
+```php
+{
+	id:1,
+    firstName:"Michael"
+    lastName:"Oke"
+    email:"okesm@yahoo.com",
+    created_at: "3 minutes ago",
+}
+```
