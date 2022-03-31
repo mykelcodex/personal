@@ -14,19 +14,15 @@ We will take a look at the **CRUDDY BY DESIGN** way of building an API in Larave
 
 In our `routes/api.php`, let us return the user's object.
 
-\`\`\`php
-
-use Illuminate\\Http\\Request;
-
-use Illuminate\\Support\\Facades\\Route;
-
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-
-	return $request->user();
-
-});
-
-\`\`\`
+    use Illuminate\Http\Request;
+    
+    use Illuminate\Support\Facades\Route;
+    
+    Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+    
+    	return $request->user();
+    
+    });
 
 The above code returns
 
@@ -40,7 +36,7 @@ The above code returns
 
 We want to transform this to satisfy the below condition:
 
-1. Remove `updated_at`
-2. Transform `created_at` to human readable format
-3. Split  `name` to `firstname` and `lastname`
-4. Transform first letter of `firstname` and `lastname` to capital letter (accessor)
+* Remove `updated_at`
+* Transform `created_at` to human readable format
+* Split  `name` to `firstname` and `lastname`
+* Transform first letter of `firstname` and `lastname` to capital letter (accessor)
