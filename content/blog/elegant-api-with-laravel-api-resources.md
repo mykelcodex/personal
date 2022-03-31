@@ -36,7 +36,7 @@ The above code returns
         updated_at: "2022-03-31 02:45:56",
     }
 
-We want to transform this to satisfy the below condition:
+We want to transform the above API to satisfy the below condition:
 
 * Remove `updated_at`
 * Transform `created_at` to human readable format
