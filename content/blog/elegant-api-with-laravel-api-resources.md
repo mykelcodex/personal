@@ -226,4 +226,4 @@ This will return the **JSON** response below
 }
 ```
 
-The `UserResource` can be used across your app. You can read more on the [Laravel Website]()
+The `UserResource` can be used across your app. You can read more on the [Laravel Website](https://laravel.com/docs/9.x/eloquent-resources "Laravel API Resources ")
