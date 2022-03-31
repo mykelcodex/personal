@@ -200,7 +200,7 @@ class UserResource extends JsonResource
 }
 ```
 
-That's it, all you need to tdo now is it import the your `UserResource`
+That's it, all you need to do now is to import your `UserResource`
 
 ```php
 use Illuminate\Http\Request;
