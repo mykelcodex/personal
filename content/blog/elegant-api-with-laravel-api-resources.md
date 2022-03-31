@@ -14,15 +14,17 @@ We will take a look at the **CRUDDY BY DESIGN** way of building an API in Larave
 
 In our `routes/api.php`, let us return the user's object.
 
-    use Illuminate\Http\Request;
-    
-    use Illuminate\Support\Facades\Route;
-    
-    Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    
-    	return $request->user();
-    
-    });
+```php
+use Illuminate\Http\Request;
+
+use Illuminate\Support\Facades\Route;
+
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+
+	return $request->user();
+
+});
+```
 
 The above code returns
 
