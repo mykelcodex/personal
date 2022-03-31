@@ -55,6 +55,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Carbon\Carbon;
 
 class User extends Authenticatable
 {
@@ -93,7 +94,7 @@ class User extends Authenticatable
      * @var array<string, string>
      */
      public function getCreatedAtAttribute(){
-     	return $this->created_at->diffForHumans();
+     	return Carbon::parse($this->created_at)->diffForHumans();
      }
      
      
@@ -138,3 +139,89 @@ This will return a new `User` object
     created_at: "3 minutes ago",
 }
 ```
+
+Not bad right? But it can be better, let's do it the **ELEGANT DESIGN PATTERN**
+
+Generate a new resource for your `User` model using `php artisan make:resource UserResource` . This will create a new folder for us in us in our `HTTP` directory.
+
+`App\Http\Resources\UserResource`
+
+```php
+<?php
+
+namespace App\Http\Resources;
+
+use Illuminate\Http\Resources\Json\JsonResource;
+
+class UserResource extends JsonResource
+{
+    /**
+     * Transform the resource into an array.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return array|\Illuminate\Contracts\Support\Arrayable|\JsonSerializable
+     */
+    public function toArray($request)
+    {
+        return parent::toArray($request);
+    }
+}
+```
+
+In the `toArray` method, that is where we get to do all the transformation and restructuring before we serve it for consumption.
+
+```php
+<?php
+
+namespace App\Http\Resources;
+
+use Illuminate\Http\Resources\Json\JsonResource;
+use Carbon\Carbon;
+
+class UserResource extends JsonResource
+{
+    /**
+     * Transform the resource into an array.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return array|\Illuminate\Contracts\Support\Arrayable|\JsonSerializable
+     */
+    public function toArray($request)
+    {
+        return [
+        	'id'=>$this->id,
+            'firstname' => uc_first(explode(' ',$this->name)[0]),
+            'lastname' => uc_first(explode(' ',$this->name)[1]),
+            'created_at' => Carbon::parse($this->created_at)->diffForHumans();
+        ];
+    }
+}
+```
+
+That's it, all you need to tdo now is it import the your `UserResource`
+
+```php
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+use App\Http\Resources\UserResource;
+
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+
+	return new UserResource($request->user());
+
+});
+```
+
+This will return the **JSON** response below
+
+```php
+{
+	id:1,
+    firstname:"Michael"
+    lastname:"Oke"
+    email:"okesm@yahoo.com",
+    created_at: "3 minutes ago",
+}
+```
+
+The `UserResource` can be used across your app. You can read more on the [Laravel Website]()
