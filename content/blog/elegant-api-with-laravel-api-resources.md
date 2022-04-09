@@ -38,7 +38,7 @@ The above code returns
 }
 ```
 
-We want to transform the above API to satisfy the below condition:
+We want to transform the above API to satisfy the below conditions:
 
 * Remove `updated_at`
 * Transform `created_at` to human readable format
